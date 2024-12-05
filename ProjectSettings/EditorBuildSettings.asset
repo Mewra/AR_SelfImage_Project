@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/AR-Filters/Scenes/AR Face Filter.unity
     guid: d2ce6375592e5714eb6c0cec4805b0fc
   - enabled: 0
@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/AR-Filters/Scenes/SelfImage-Scene/SelfImage.unity
     guid: de11827f778156c4ea5e688454353746
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   m_configObjects:

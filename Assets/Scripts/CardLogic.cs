@@ -68,13 +68,13 @@ public class CardLogic : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
         if (rectTransform.anchoredPosition.x > 100)
         {
             GameManager.instance.Accept();
-            targetPosition = new Vector2(450, 0);
+            targetPosition = new Vector2(500, 0);
         }else
 
         if (rectTransform.anchoredPosition.x < -100)
         {
             GameManager.instance.Reject();
-            targetPosition = new Vector2(-450, 0);
+            targetPosition = new Vector2(-500, 0);
         }
 
         //rectTransform.anchoredPosition = Vector2.MoveTowards(rectTransform.anchoredPosition, new Vector2(0, 0), speed*Time.deltaTime);
