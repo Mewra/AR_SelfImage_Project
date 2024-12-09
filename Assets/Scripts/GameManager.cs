@@ -14,11 +14,18 @@ public class GameManager : MonoBehaviour
     public List<Immagine> allImages;
     public List<List<Immagine>> imgClusters;
     public List<ImagesConfig> resourcesImage;
+    public List<ImmagineCompleta> allCompletedImages;
     public Immagine spawnedImage;
 
     [Header("Swiper")]
     public Image currentImage;
     public Image nextImage;
+
+    [Header("Unlocked")]
+    public Image unlockedImage;
+    public GameObject panelImageUnlocked;
+    public GameObject filtroGO;
+
 
     public void Awake()
     {
@@ -29,6 +36,7 @@ public class GameManager : MonoBehaviour
     {
         allImages = new List<Immagine>();
         imgClusters = new List<List<Immagine>>();
+        allCompletedImages = new List<ImmagineCompleta>();
         for(int i = 0; i<3;i++)
         {
             imgClusters.Add(new List<Immagine>());
@@ -54,6 +62,12 @@ public class GameManager : MonoBehaviour
                     imgClusters[(int)img.cluster].Add(img);
                 }
 
+                ImmagineCompleta imgCompl = new ImmagineCompleta();
+                imgCompl.IDCompleteImage = cic.id;
+                imgCompl.sprite = cic.completedImage;
+                imgCompl.hasFilter = cic.hasFilter;
+                allCompletedImages.Add(imgCompl);
+
             }
 
         }
@@ -65,6 +79,7 @@ public class GameManager : MonoBehaviour
     {
         i.isAlreadySpawned = true;
         imgClusters[(int)c].Remove(i);
+        allImages[allImages.IndexOf(i)].isAlreadySpawned = true;
     }
 
     public Immagine ChooseNewImage(Clusters c)
@@ -73,13 +88,18 @@ public class GameManager : MonoBehaviour
         int valoreCasuale = (int)UnityEngine.Random.Range(0, size-1);
         Immagine img = new Immagine();
         img = imgClusters[(int)c][valoreCasuale];
-        RemoveImage(c, img);
+        
         return img;
+    }
+
+    public Clusters ChooseClusterToSpawn()
+    {
+        return Clusters.A;
     }
 
     public void SpawnNewImage()
     {
-        Immagine i = ChooseNewImage(Clusters.A);
+        Immagine i = ChooseNewImage(ChooseClusterToSpawn());
         spawnedImage = i;
         currentImage.sprite = i.imageConfig.image;
     }
@@ -100,6 +120,82 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void SwipeLeft()
+    {
+        Reject();
+
+        RemoveImage(spawnedImage.cluster, spawnedImage);
+    }
+
+    public void SwipeRight()
+    {
+        Accept();
+        spawnedImage.isSwappedRight = true;
+
+        if (!(CountUnlockCardComplete(spawnedImage.cluster, spawnedImage.IDCompleteImage) > 2))
+        {
+            
+        }else
+        {
+            UnlockCompletedImage();
+        }
+
+        RemoveImage(spawnedImage.cluster, spawnedImage);
+    }
+
+    public void UnlockCompletedImage()
+    {   
+        ImmagineCompleta icomp = GetCompletedImage(spawnedImage);
+        panelImageUnlocked.gameObject.SetActive(true);
+        filtroGO.gameObject.SetActive(icomp.hasFilter);
+        unlockedImage.sprite = icomp.sprite;
+        StartCoroutine(CountdownImgUnlocked());
+    }
+
+    IEnumerator CountdownImgUnlocked()
+    {
+        yield return new WaitForSeconds(3f);
+        panelImageUnlocked.gameObject.SetActive(false);
+        filtroGO.gameObject.SetActive(false);
+    }
+
+    public int CountUnlockCardComplete(Clusters c, string idCardComplete)
+    {
+        int num = 0;
+
+        foreach(Immagine i in allImages)
+        {
+            if (i.IDCompleteImage == idCardComplete)
+            {
+                if (i.isSwappedRight)
+                {
+                    num++;
+                    Debug.Log("n: " + num);
+                    if (num > 2)
+                    {
+                        return num;
+                    }
+                }
+            }
+        }
+
+        return num;
+    }
+
+    public ImmagineCompleta GetCompletedImage(Immagine i)
+    {
+        foreach(ImmagineCompleta iCompleted in allCompletedImages)
+        {
+            if(iCompleted.IDCompleteImage == i.IDCompleteImage)
+            {
+                return iCompleted;
+            }
+        }
+
+        return null;
+
+    }
+
 }
 
 [Serializable]
@@ -109,4 +205,12 @@ public class Immagine
     public string IDCompleteImage;
     public ImageConfig imageConfig;
     public bool isAlreadySpawned;
+    public bool isSwappedRight;
+}
+
+public class ImmagineCompleta
+{
+    public string IDCompleteImage;
+    public Sprite sprite;
+    public bool hasFilter;
 }

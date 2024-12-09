@@ -18,6 +18,8 @@ public class ImagesConfig : ScriptableObject
     {
         public string id;
         public Clusters cluster;
+        public Sprite completedImage;
+        public bool hasFilter;
         public List<ImageConfig> images;
 
     }

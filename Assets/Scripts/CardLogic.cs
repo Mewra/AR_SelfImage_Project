@@ -67,13 +67,13 @@ public class CardLogic : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
         //RIGHT SIDE
         if (rectTransform.anchoredPosition.x > 100)
         {
-            GameManager.instance.Accept();
+            GameManager.instance.SwipeRight();
             targetPosition = new Vector2(500, 0);
         }else
 
         if (rectTransform.anchoredPosition.x < -100)
         {
-            GameManager.instance.Reject();
+            GameManager.instance.SwipeLeft();
             targetPosition = new Vector2(-500, 0);
         }
 
@@ -96,7 +96,6 @@ public class CardLogic : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
             
             if (targetPosition.x != 0)
             {
-                Debug.Log(targetPosition);
                 if (Vector2.Distance(rectTransform.anchoredPosition, targetPosition) < 0.01f)
                 {
 
