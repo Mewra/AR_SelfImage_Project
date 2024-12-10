@@ -26,6 +26,18 @@ public class GameManager : MonoBehaviour
     public GameObject panelImageUnlocked;
     public GameObject filtroGO;
 
+    [Header("FinishExpPanel")]
+    public GameObject panelFinished;
+
+    [Header("Support")]
+    private bool experienceFinished = false;
+    private bool isCardUnlockedShown = false;
+    private bool filterUnlocked = false;
+    private bool reachedEnoughCard = false;
+    private int numberSpawnedImages = 0;
+    public int maxNumberReach; //20 da inspector
+
+
 
     public void Awake()
     {
@@ -34,6 +46,13 @@ public class GameManager : MonoBehaviour
     }
     public void Init()
     {
+        filterUnlocked = false;
+        reachedEnoughCard = false;
+        experienceFinished = false;
+        isCardUnlockedShown = false;
+        numberSpawnedImages = 0;
+        panelFinished.SetActive(false);
+
         allImages = new List<Immagine>();
         imgClusters = new List<List<Immagine>>();
         allCompletedImages = new List<ImmagineCompleta>();
@@ -99,9 +118,31 @@ public class GameManager : MonoBehaviour
 
     public void SpawnNewImage()
     {
-        Immagine i = ChooseNewImage(ChooseClusterToSpawn());
-        spawnedImage = i;
-        currentImage.sprite = i.imageConfig.image;
+        Clusters c = ChooseClusterToSpawn();
+        if (imgClusters[(int)c].Count != 0)
+        {
+            Immagine i = ChooseNewImage(c);
+            spawnedImage = i;
+            currentImage.sprite = i.imageConfig.image;
+            numberSpawnedImages++;
+
+        }
+        else
+        {
+            Debug.Log("Non ci sono piu card da spawnare in " + c);
+        }
+    }
+
+    public bool CheckFinishExperience()
+    {
+        if (numberSpawnedImages > maxNumberReach)
+        {
+            if (filterUnlocked)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     public void Reject()
@@ -125,6 +166,10 @@ public class GameManager : MonoBehaviour
         Reject();
 
         RemoveImage(spawnedImage.cluster, spawnedImage);
+        if (CheckFinishExperience())
+        {
+            panelFinished.SetActive(true);
+        }
     }
 
     public void SwipeRight()
@@ -132,31 +177,51 @@ public class GameManager : MonoBehaviour
         Accept();
         spawnedImage.isSwappedRight = true;
 
-        if (!(CountUnlockCardComplete(spawnedImage.cluster, spawnedImage.IDCompleteImage) > 2))
-        {
-            
-        }else
+        if ((CountUnlockCardComplete(spawnedImage.cluster, spawnedImage.IDCompleteImage) > 2))
         {
             UnlockCompletedImage();
         }
 
         RemoveImage(spawnedImage.cluster, spawnedImage);
+        if (CheckFinishExperience())
+        {
+            experienceFinished = true;
+            if (!isCardUnlockedShown)
+            {
+                panelFinished.SetActive(true);
+            }
+        }
     }
 
     public void UnlockCompletedImage()
     {   
         ImmagineCompleta icomp = GetCompletedImage(spawnedImage);
         panelImageUnlocked.gameObject.SetActive(true);
-        filtroGO.gameObject.SetActive(icomp.hasFilter);
         unlockedImage.sprite = icomp.sprite;
+        filtroGO.gameObject.SetActive(icomp.hasFilter);
+        if (icomp.hasFilter)
+        {
+            UnlockFilter(icomp);
+        }
         StartCoroutine(CountdownImgUnlocked());
     }
 
     IEnumerator CountdownImgUnlocked()
     {
+        isCardUnlockedShown = true;
         yield return new WaitForSeconds(3f);
         panelImageUnlocked.gameObject.SetActive(false);
         filtroGO.gameObject.SetActive(false);
+        isCardUnlockedShown = false;
+        if (experienceFinished)
+        {
+            panelFinished.SetActive(true);
+        }
+    }
+
+    public void UnlockFilter(ImmagineCompleta ic)
+    {
+        filterUnlocked = true;
     }
 
     public int CountUnlockCardComplete(Clusters c, string idCardComplete)
