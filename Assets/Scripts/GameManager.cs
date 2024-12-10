@@ -26,8 +26,11 @@ public class GameManager : MonoBehaviour
     public GameObject panelImageUnlocked;
     public GameObject filtroGO;
 
-    [Header("FinishExpPanel")]
+    [Header("Scene")]
+    public GameObject mainScene;
     public GameObject panelFinished;
+
+    
 
     [Header("Support")]
     private bool experienceFinished = false;
@@ -259,6 +262,12 @@ public class GameManager : MonoBehaviour
 
         return null;
 
+    }
+
+    public void OpenScreenshootScene()
+    {
+        mainScene.SetActive(false);
+        ARManager.instance.fotoScene.SetActive(true);
     }
 
 }
