@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using TMPro;
+using UnityEngine.XR.ARFoundation;
 
 public class ARManager : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class ARManager : MonoBehaviour
         instance = this;
         countdownText.gameObject.SetActive(false);
     }
+
+    #region Screenshot
     IEnumerator CaptureScreenshot()
     {
         yield return new WaitForEndOfFrame();
@@ -81,4 +84,58 @@ public class ARManager : MonoBehaviour
         countdownText.gameObject.SetActive(false);
         TakeScreenshot();
     }
+    #endregion
+
+    #region Occlusion
+
+    [Header("Occlusion")]
+    public Camera arCamera;
+    public GameObject backgroundObject;
+    public AROcclusionManager occlusionManager;
+    public float distanceBehind = 8.0f;
+
+    void Update()
+    {
+        /*
+        // Posiziona il background dietro
+        Vector3 positionBehind = arCamera.transform.position + arCamera.transform.forward * distanceBehind; 
+        backgroundObject.transform.position = positionBehind;
+        backgroundObject.transform.rotation = Quaternion.LookRotation(arCamera.transform.forward);
+        backgroundObject.GetComponent<MeshRenderer>().material.color = Color.green;
+        */
+
+        /*
+        // Controlla l'occlusione (solo se supportato dal dispositivo)
+        if (occlusionManager.environmentDepthTexture != null)
+        {
+            backgroundObject.GetComponent<MeshRenderer>().material.color = Color.blue;
+            Texture2D depthTexture = occlusionManager.environmentDepthTexture;
+            Vector3 screenPoint = arCamera.WorldToScreenPoint(backgroundObject.transform.position);
+            float depthAtPoint = GetDepthAtScreenPoint(depthTexture, screenPoint);
+
+            // Nascondi il background se è davanti al corpo
+            if (depthAtPoint > distanceBehind)
+            {
+                backgroundObject.SetActive(false);
+                backgroundObject.GetComponent<MeshRenderer>().material.color = Color.black;
+            }
+            else
+            {
+                backgroundObject.SetActive(true);
+                backgroundObject.GetComponent<MeshRenderer>().material.color = Color.red;
+            }
+        }
+        */
+    }
+
+    float GetDepthAtScreenPoint(Texture2D depthTexture, Vector3 screenPoint)
+    {
+        int x = Mathf.Clamp((int)(screenPoint.x / Screen.width * depthTexture.width), 0, depthTexture.width - 1);
+        int y = Mathf.Clamp((int)(screenPoint.y / Screen.height * depthTexture.height), 0, depthTexture.height - 1);
+        Color depthColor = depthTexture.GetPixel(x, y);
+        return depthColor.r; // Profondità normalizzata
+    }
+
+
+    #endregion
 }
