@@ -17,6 +17,7 @@ public class CheckOcclusion : MonoBehaviour
     {
         if (occlusionManager.environmentDepthTexture != null)
         {
+            debug.text = "sto mettendo la texture";
             backgroundMaterial.SetTexture("_DepthTex", occlusionManager.environmentDepthTexture);
         }
         else
