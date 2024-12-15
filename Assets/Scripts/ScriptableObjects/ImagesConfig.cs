@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 using static GameManager;
 
@@ -21,7 +22,8 @@ public class ImagesConfig : ScriptableObject
         public Sprite completedImage;
         public bool hasFilter;
         public List<ImageConfig> images;
-
+        public VolumeProfile cameraFilter;
+        public Material faceFilter;
     }
 
     [Serializable]

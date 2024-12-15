@@ -17,7 +17,7 @@ MonoBehaviour:
     cluster: 0
     completedImage: {fileID: -5526692874520906778, guid: e1893a9320bb33b488ab8c882969cdce,
       type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: 0
       image: {fileID: -5526692874520906778, guid: 4195c45ed750b9b4d808c0a55a66c71e,
@@ -58,11 +58,13 @@ MonoBehaviour:
         value: 20
       - cluster: 3
         value: -15
+    cameraFilter: {fileID: 11400000, guid: f22118e94a330464baa1b8ae649612ce, type: 2}
+    faceFilter: {fileID: 2100000, guid: 027607771299e8c439f2045ff2acc3e1, type: 2}
   - id: Quadro2
     cluster: 0
     completedImage: {fileID: -2426113772406766134, guid: e1a13c6d2687e4d4fbc6c33def5c527c,
       type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: 0
       image: {fileID: -2426113772406766134, guid: e1a13c6d2687e4d4fbc6c33def5c527c,
@@ -103,11 +105,13 @@ MonoBehaviour:
         value: 20
       - cluster: 3
         value: -15
+    cameraFilter: {fileID: 11400000, guid: b72aa985beb4ed14d8f01753d863f210, type: 2}
+    faceFilter: {fileID: 2100000, guid: 11a27ae813eb6ea4ca9279c6bc5331d6, type: 2}
   - id: Quadro3
     cluster: 0
     completedImage: {fileID: 2231545762802194764, guid: 1865b7d45ab95514ba79411e5e2bc192,
       type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: 0
       image: {fileID: 2231545762802194764, guid: 1865b7d45ab95514ba79411e5e2bc192,
@@ -148,3 +152,5 @@ MonoBehaviour:
         value: 20
       - cluster: 3
         value: -15
+    cameraFilter: {fileID: 11400000, guid: e7c16475f36e15241acea856f895b9fa, type: 2}
+    faceFilter: {fileID: 2100000, guid: 1f6e2f8cd18d9624f8ff2372a684948b, type: 2}

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 using static GameManager;
 using static ImagesConfig;
@@ -88,6 +89,8 @@ public class GameManager : MonoBehaviour
                 imgCompl.IDCompleteImage = cic.id;
                 imgCompl.sprite = cic.completedImage;
                 imgCompl.hasFilter = cic.hasFilter;
+                imgCompl.faceFilter = cic.faceFilter;
+                imgCompl.cameraFilter = cic.cameraFilter;
                 allCompletedImages.Add(imgCompl);
 
             }
@@ -225,6 +228,7 @@ public class GameManager : MonoBehaviour
     public void UnlockFilter(ImmagineCompleta ic)
     {
         filterUnlocked = true;
+        FiltriManager.instance.UpdateFilters(ic.cameraFilter, ic.faceFilter); //controll
     }
 
     public int CountUnlockCardComplete(Clusters c, string idCardComplete)
@@ -287,4 +291,6 @@ public class ImmagineCompleta
     public string IDCompleteImage;
     public Sprite sprite;
     public bool hasFilter;
+    public VolumeProfile cameraFilter;
+    public Material faceFilter;
 }

@@ -88,6 +88,7 @@ public class ARManager : MonoBehaviour
 
     #region Occlusion
 
+    /*
     [Header("Occlusion")]
     public Camera arCamera;
     public GameObject backgroundObject;
@@ -125,7 +126,7 @@ public class ARManager : MonoBehaviour
                 backgroundObject.GetComponent<MeshRenderer>().material.color = Color.red;
             }
         }
-        */
+        
     }
 
     float GetDepthAtScreenPoint(Texture2D depthTexture, Vector3 screenPoint)
@@ -136,6 +137,6 @@ public class ARManager : MonoBehaviour
         return depthColor.r; // Profondità normalizzata
     }
 
-
+*/
     #endregion
 }
