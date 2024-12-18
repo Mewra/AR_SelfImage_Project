@@ -89,8 +89,8 @@ public class GameManager : MonoBehaviour
                 imgCompl.IDCompleteImage = cic.id;
                 imgCompl.sprite = cic.completedImage;
                 imgCompl.hasFilter = cic.hasFilter;
-                imgCompl.faceFilter = cic.faceFilter;
-                imgCompl.cameraFilter = cic.cameraFilter;
+                imgCompl.filtro = cic.filtro;
+                imgCompl.isUnlocked = false;
                 allCompletedImages.Add(imgCompl);
 
             }
@@ -207,7 +207,10 @@ public class GameManager : MonoBehaviour
         filtroGO.gameObject.SetActive(icomp.hasFilter);
         if (icomp.hasFilter)
         {
-            UnlockFilter(icomp);
+            if (!icomp.isUnlocked)
+            {
+                UnlockFilter(icomp);
+            }
         }
         StartCoroutine(CountdownImgUnlocked());
     }
@@ -228,7 +231,8 @@ public class GameManager : MonoBehaviour
     public void UnlockFilter(ImmagineCompleta ic)
     {
         filterUnlocked = true;
-        FiltriManager.instance.UpdateFilters(ic.cameraFilter, ic.faceFilter); //controll
+        ic.isUnlocked = true;
+        FiltriManager.instance.UpdateFilters(ic.filtro); //controll
     }
 
     public int CountUnlockCardComplete(Clusters c, string idCardComplete)
@@ -272,6 +276,7 @@ public class GameManager : MonoBehaviour
     {
         mainScene.SetActive(false);
         ARManager.instance.fotoScene.SetActive(true);
+        FiltriManager.instance.UIfilter.gameObject.SetActive(true);
     }
 
 }
@@ -291,6 +296,6 @@ public class ImmagineCompleta
     public string IDCompleteImage;
     public Sprite sprite;
     public bool hasFilter;
-    public VolumeProfile cameraFilter;
-    public Material faceFilter;
+    public bool isUnlocked;
+    public FiltroModel filtro;
 }

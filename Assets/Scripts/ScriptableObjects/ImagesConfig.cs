@@ -22,8 +22,7 @@ public class ImagesConfig : ScriptableObject
         public Sprite completedImage;
         public bool hasFilter;
         public List<ImageConfig> images;
-        public VolumeProfile cameraFilter;
-        public Material faceFilter;
+        public FiltroModel filtro;
     }
 
     [Serializable]

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
 
 public class FiltriManager : MonoBehaviour
 {
@@ -9,16 +10,44 @@ public class FiltriManager : MonoBehaviour
     public Volume GlobalCameraFilter;
     public GameObject facemesh;
     public GameObject faceARDefault;
+    public Image UIfilter;
+
+    //filtri definitivi
+    private VolumeProfile defCameraFilter;
+    private Material defFaceFilter;
+    private GameObject defEffettoParticellare;
+    private Image defUIFilter;
+    private GameObject def3DObject;
+
 
     private void Awake()
     {
         instance = this;
     }
 
-    public void UpdateFilters(VolumeProfile cameraFilter, Material faceFilter)
+    public void UpdateFilters(FiltroModel filtro)
     {
-        GlobalCameraFilter.profile = cameraFilter;
-        facemesh.GetComponent<SkinnedMeshRenderer>().material = faceFilter;
-        faceARDefault.GetComponent<MeshRenderer>().material = faceFilter;
+        if (filtro.cameraFilter != null)
+        {
+            GlobalCameraFilter.profile = filtro.cameraFilter;
+        }
+        if (filtro.faceFilter != null)
+        {
+            facemesh.GetComponent<SkinnedMeshRenderer>().material = filtro.faceFilter;
+            faceARDefault.GetComponent<MeshRenderer>().material = filtro.faceFilter;
+        }
+        if (filtro.effettoParticellare != null)
+        {
+            Instantiate(filtro.effettoParticellare, faceARDefault.transform);
+        }
+        if (filtro.UIFilter != null)
+        {
+            UIfilter.sprite = filtro.UIFilter;
+        }
+        if(filtro._3DObject != null)
+        {
+            Instantiate(filtro._3DObject, faceARDefault.transform);
+        }
+
     }
 }
