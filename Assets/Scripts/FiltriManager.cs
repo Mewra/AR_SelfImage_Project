@@ -29,23 +29,29 @@ public class FiltriManager : MonoBehaviour
     {
         if (filtro.cameraFilter != null)
         {
+            Debug.Log("Aggiungo CameraFilter");
             GlobalCameraFilter.profile = filtro.cameraFilter;
         }
         if (filtro.faceFilter != null)
         {
-            facemesh.GetComponent<SkinnedMeshRenderer>().material = filtro.faceFilter;
-            faceARDefault.GetComponent<MeshRenderer>().material = filtro.faceFilter;
+            Debug.Log("Aggiungo FaceFilter " + filtro.faceFilter.gameObject.name);
+            Instantiate(filtro.faceFilter, faceARDefault.transform);
+            //facemesh.GetComponent<SkinnedMeshRenderer>().material = filtro.faceFilter;
+            //faceARDefault.GetComponent<MeshRenderer>().material = filtro.faceFilter;
         }
         if (filtro.effettoParticellare != null)
         {
+            Debug.Log("Aggiungo EffPartic");
             Instantiate(filtro.effettoParticellare, faceARDefault.transform);
         }
         if (filtro.UIFilter != null)
         {
+            Debug.Log("Aggiungo UI");
             UIfilter.sprite = filtro.UIFilter;
         }
         if(filtro._3DObject != null)
         {
+            Debug.Log("Aggiungo 3D OBJ " + filtro._3DObject.gameObject.name);
             Instantiate(filtro._3DObject, faceARDefault.transform);
         }
 

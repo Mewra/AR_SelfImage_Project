@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class FiltroModel : MonoBehaviour
 {
     public VolumeProfile cameraFilter;
-    public Material faceFilter;
+    public GameObject faceFilter;
     public GameObject effettoParticellare;
     public Sprite UIFilter;
     public GameObject _3DObject;

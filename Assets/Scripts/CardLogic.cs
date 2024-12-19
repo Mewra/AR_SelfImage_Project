@@ -31,7 +31,6 @@ public class CardLogic : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("Trascinamento iniziato");
         endDrag = false;
         targetPosition = Vector2.zero;
     }

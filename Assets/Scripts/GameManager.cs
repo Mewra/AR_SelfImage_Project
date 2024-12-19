@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     [Header("Unlocked")]
     public Image unlockedImage;
     public GameObject panelImageUnlocked;
-    public GameObject filtroGO;
+    public GameObject filtroText;
 
     [Header("Scene")]
     public GameObject mainScene;
@@ -202,17 +202,19 @@ public class GameManager : MonoBehaviour
     public void UnlockCompletedImage()
     {   
         ImmagineCompleta icomp = GetCompletedImage(spawnedImage);
-        panelImageUnlocked.gameObject.SetActive(true);
-        unlockedImage.sprite = icomp.sprite;
-        filtroGO.gameObject.SetActive(icomp.hasFilter);
-        if (icomp.hasFilter)
+        if (!icomp.isUnlocked)
         {
-            if (!icomp.isUnlocked)
+            panelImageUnlocked.gameObject.SetActive(true);
+            unlockedImage.sprite = icomp.sprite;
+            filtroText.gameObject.SetActive(icomp.hasFilter);
+            if (icomp.hasFilter)
             {
+
                 UnlockFilter(icomp);
+
             }
+            StartCoroutine(CountdownImgUnlocked());
         }
-        StartCoroutine(CountdownImgUnlocked());
     }
 
     IEnumerator CountdownImgUnlocked()
@@ -220,7 +222,7 @@ public class GameManager : MonoBehaviour
         isCardUnlockedShown = true;
         yield return new WaitForSeconds(3f);
         panelImageUnlocked.gameObject.SetActive(false);
-        filtroGO.gameObject.SetActive(false);
+        filtroText.gameObject.SetActive(false);
         isCardUnlockedShown = false;
         if (experienceFinished)
         {
@@ -246,7 +248,6 @@ public class GameManager : MonoBehaviour
                 if (i.isSwappedRight)
                 {
                     num++;
-                    Debug.Log("n: " + num);
                     if (num > 2)
                     {
                         return num;

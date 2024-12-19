@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "32031JEGR07063",
         "name": "com.UnityLearn.ARProject",
-        "processId": 9788,
+        "processId": 16978,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,85 +11,43 @@
         {
             "deviceId": "32031JEGR07063",
             "name": "com.UnityLearn.ARProject",
-            "processId": 32298,
-            "exited": false
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 663,
-            "exited": false
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 6123,
-            "exited": false
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 6652,
-            "exited": false
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 7695,
-            "exited": false
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 8482,
-            "exited": false
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 9285,
-            "exited": false
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 11677,
-            "exited": false
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 12293,
-            "exited": false
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 13312,
-            "exited": false
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 17382,
-            "exited": false
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 18839,
-            "exited": false
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 2266,
-            "exited": false
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
             "processId": 9788,
+            "exited": true
+        },
+        {
+            "deviceId": "32031JEGR07063",
+            "name": "com.UnityLearn.ARProject",
+            "processId": 26045,
+            "exited": true
+        },
+        {
+            "deviceId": "32031JEGR07063",
+            "name": "com.UnityLearn.ARProject",
+            "processId": 8957,
+            "exited": true
+        },
+        {
+            "deviceId": "32031JEGR07063",
+            "name": "com.UnityLearn.ARProject",
+            "processId": 11521,
+            "exited": true
+        },
+        {
+            "deviceId": "32031JEGR07063",
+            "name": "org.telegram.messenger",
+            "processId": 11133,
+            "exited": false
+        },
+        {
+            "deviceId": "32031JEGR07063",
+            "name": "com.UnityLearn.ARProject",
+            "processId": 14640,
+            "exited": false
+        },
+        {
+            "deviceId": "32031JEGR07063",
+            "name": "com.UnityLearn.ARProject",
+            "processId": 16978,
             "exited": false
         }
     ],

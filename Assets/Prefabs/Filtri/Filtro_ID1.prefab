@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1795431980942655607}
   - component: {fileID: 184096011432200753}
   m_Layer: 0
-  m_Name: Filtro_IDImmagine 1
+  m_Name: Filtro_ID1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,10 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7af5c932cd7255c49b9914df4ee0a0b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraFilter: {fileID: 11400000, guid: b72aa985beb4ed14d8f01753d863f210, type: 2}
-  faceFilter: {fileID: 2100000, guid: 11a27ae813eb6ea4ca9279c6bc5331d6, type: 2}
-  effettoParticellare: {fileID: 6930150282965465198, guid: b5c43875392269c49beedc9cb1cfc14d,
+  cameraFilter: {fileID: 11400000, guid: f22118e94a330464baa1b8ae649612ce, type: 2}
+  faceFilter: {fileID: 3750201941875818104, guid: 9b242cecb9732c54babdbaf725deeee1,
     type: 3}
-  UIFilter: {fileID: 21300000, guid: 8b395049554bd4f4eb8c2d7b33e77f88, type: 3}
-  _3DObject: {fileID: 7358237978258168687, guid: 86c2088922990394aa40f3608effb1b5,
+  effettoParticellare: {fileID: 4408147615699063330, guid: 5c1f8d39f6972a24080af43123248bff,
     type: 3}
+  UIFilter: {fileID: 0}
+  _3DObject: {fileID: 0}
