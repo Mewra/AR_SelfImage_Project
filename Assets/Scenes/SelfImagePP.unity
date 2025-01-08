@@ -1650,9 +1650,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allImages: []
   resourcesImage:
-  - {fileID: 11400000, guid: 834f3fcf9b4241442a6e72c1430595e3, type: 2}
-  - {fileID: 11400000, guid: 2982fb5e2174d114ba8e89fdfe308f0d, type: 2}
-  - {fileID: 11400000, guid: 17a86b61f0910af4e8e49cabc936a7d7, type: 2}
+  - {fileID: 11400000, guid: 37e92352bd322a04ab360817d4840afb, type: 2}
+  - {fileID: 11400000, guid: 56509c083036acc4cad3b110617326cf, type: 2}
+  - {fileID: 11400000, guid: ce89ac19c13551a479bdc853a3887417, type: 2}
+  - {fileID: 11400000, guid: 6243b82838487c44c810096541ee96fc, type: 2}
+  - {fileID: 11400000, guid: 3ff93e7ce88877c47a0423bdbb5bdff8, type: 2}
+  - {fileID: 11400000, guid: 55a92ed529002e04d83b8cb8f744d541, type: 2}
+  allCompletedImages: []
   spawnedImage:
     cluster: 0
     IDCompleteImage: 
@@ -1670,7 +1674,7 @@ MonoBehaviour:
   filtroText: {fileID: 859586659}
   mainScene: {fileID: 1448232595}
   panelFinished: {fileID: 661591282}
-  maxNumberReach: 10
+  maxNumberReach: 20
 --- !u!1 &690692232
 GameObject:
   m_ObjectHideFlags: 0

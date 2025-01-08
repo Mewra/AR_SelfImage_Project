@@ -1,31 +1,13 @@
 {
     "m_SelectedDeviceId": "32031JEGR07063",
     "m_SelectedPackage": {
-        "deviceId": "32031JEGR07063",
-        "name": "com.UnityLearn.ARProject",
-        "processId": 16978,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 9788,
-            "exited": true
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 26045,
-            "exited": true
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 8957,
-            "exited": true
-        },
         {
             "deviceId": "32031JEGR07063",
             "name": "com.UnityLearn.ARProject",
@@ -42,13 +24,19 @@
             "deviceId": "32031JEGR07063",
             "name": "com.UnityLearn.ARProject",
             "processId": 14640,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "32031JEGR07063",
             "name": "com.UnityLearn.ARProject",
             "processId": 16978,
-            "exited": false
+            "exited": true
+        },
+        {
+            "deviceId": "32031JEGR07063",
+            "name": "com.UnityLearn.ARProject",
+            "processId": 20478,
+            "exited": true
         }
     ],
     "m_Tags": {

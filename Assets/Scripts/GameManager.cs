@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
         allImages = new List<Immagine>();
         imgClusters = new List<List<Immagine>>();
         allCompletedImages = new List<ImmagineCompleta>();
-        for(int i = 0; i<3;i++)
+        for(int i = 0; i<resourcesImage.Count;i++)
         {
             imgClusters.Add(new List<Immagine>());
         }
@@ -119,24 +119,24 @@ public class GameManager : MonoBehaviour
 
     public Clusters ChooseClusterToSpawn()
     {
-        return Clusters.A;
+        int clusterCasuale = 99;
+        do
+        {
+            clusterCasuale = (int)UnityEngine.Random.Range(0, 5);
+        } while (imgClusters[(int)clusterCasuale].Count < 0);
+
+        Debug.Log("Cluster: " + (Clusters)clusterCasuale);
+
+        return (Clusters)clusterCasuale;
     }
 
     public void SpawnNewImage()
     {
         Clusters c = ChooseClusterToSpawn();
-        if (imgClusters[(int)c].Count != 0)
-        {
-            Immagine i = ChooseNewImage(c);
-            spawnedImage = i;
-            currentImage.sprite = i.imageConfig.image;
-            numberSpawnedImages++;
-
-        }
-        else
-        {
-            Debug.Log("Non ci sono piu card da spawnare in " + c);
-        }
+        Immagine i = ChooseNewImage(c);
+        spawnedImage = i;
+        currentImage.sprite = i.imageConfig.image;
+        numberSpawnedImages++;
     }
 
     public bool CheckFinishExperience()
@@ -207,6 +207,7 @@ public class GameManager : MonoBehaviour
             panelImageUnlocked.gameObject.SetActive(true);
             unlockedImage.sprite = icomp.sprite;
             filtroText.gameObject.SetActive(icomp.hasFilter);
+            icomp.isUnlocked = true;
             if (icomp.hasFilter)
             {
 
@@ -233,7 +234,6 @@ public class GameManager : MonoBehaviour
     public void UnlockFilter(ImmagineCompleta ic)
     {
         filterUnlocked = true;
-        ic.isUnlocked = true;
         FiltriManager.instance.UpdateFilters(ic.filtro); //controll
     }
 
@@ -292,6 +292,7 @@ public class Immagine
     public bool isSwappedRight;
 }
 
+[Serializable]
 public class ImmagineCompleta
 {
     public string IDCompleteImage;
