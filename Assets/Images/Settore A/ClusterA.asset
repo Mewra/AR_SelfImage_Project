@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: ClusterA
   m_EditorClassIdentifier: 
   listImageConfig:
-  - id: A.1
+  - id: A1
     cluster: 0
     completedImage: {fileID: 21300000, guid: b6511d5264118a643968f8beff675337, type: 3}
     hasFilter: 0
     images:
-    - id: 1
+    - id: A1.0
       image: {fileID: 21300000, guid: 45fbf64f913156d49996db111cd73d52, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -34,7 +34,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: 8
-    - id: 2
+    - id: A1.1
       image: {fileID: 21300000, guid: a719af5ea64acb64da0e50083017d507, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -50,7 +50,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: 8
-    - id: 3
+    - id: A1.3
       image: {fileID: 21300000, guid: 886c66a2607a7234fae62e0fe6678937, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: 8
-    - id: 4
+    - id: A1.4
       image: {fileID: 21300000, guid: 56452e93e68b7484ab76bc15333c40cb, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: 8
-    - id: 5
+    - id: A1.5
       image: {fileID: 21300000, guid: db27dc106b3b5894eb541024df5fb625, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -99,12 +99,12 @@ MonoBehaviour:
       - cluster: 4
         value: 8
     filtro: {fileID: 0}
-  - id: A.2
+  - id: A2
     cluster: 0
     completedImage: {fileID: 21300000, guid: c608681ed1a8f0b46855230b1ab9fd5e, type: 3}
     hasFilter: 0
     images:
-    - id: 1
+    - id: A2.0
       image: {fileID: 21300000, guid: b6a5fb83411a98e42ad5aa81ea11eeef, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -120,7 +120,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: 8
-    - id: 2
+    - id: A2.1
       image: {fileID: 21300000, guid: 68a2b2ab36962654d84412688d175f6d, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -136,7 +136,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: 8
-    - id: 3
+    - id: A2.2
       image: {fileID: 21300000, guid: 5b35b50c639eee4458b40db9454feceb, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -152,7 +152,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: 8
-    - id: 4
+    - id: A2.3
       image: {fileID: 21300000, guid: ad41e9b3e15c4a040b0cc1b5397b08f5, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -168,7 +168,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: 8
-    - id: 5
+    - id: A2.4
       image: {fileID: 21300000, guid: 71343c44c8d699949a2d5b3ff30e7c06, type: 3}
       AcceptedValues:
       - cluster: 0
