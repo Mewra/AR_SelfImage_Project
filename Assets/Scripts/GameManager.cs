@@ -145,6 +145,7 @@ public class GameManager : MonoBehaviour
         {
             if (filterUnlocked)
             {
+                LinkAPIManager.instance.AddClusterValues();
                 return true;
             }
         }
@@ -157,6 +158,8 @@ public class GameManager : MonoBehaviour
         {
             SlidersManager.instance.UpdateSliders(VI);
         }
+
+        LinkAPIManager.instance.AddInteraction(spawnedImage, false);
     }
 
     public void Accept()
@@ -165,6 +168,8 @@ public class GameManager : MonoBehaviour
         {
             SlidersManager.instance.UpdateSliders(VI);
         }
+
+        LinkAPIManager.instance.AddInteraction(spawnedImage, true);
     }
 
     public void SwipeLeft()
@@ -212,8 +217,10 @@ public class GameManager : MonoBehaviour
             {
 
                 UnlockFilter(icomp);
+                LinkAPIManager.instance.AddUnlockedFilters(icomp.filtro.id_nome);
 
             }
+            LinkAPIManager.instance.AddUnlockedImage(icomp.IDCompleteImage);
             StartCoroutine(CountdownImgUnlocked());
         }
     }

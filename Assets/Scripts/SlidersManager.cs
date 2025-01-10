@@ -16,16 +16,6 @@ public class SlidersManager : MonoBehaviour
     {
         instance = this;
     }
-    public void OnClickProvaColore()
-    {
-        ValuesImage vi = new ValuesImage();
-        vi.cluster = Clusters.A;
-        vi.value = 20;
-        UpdateSliders(vi);
-        vi.cluster = Clusters.B;
-        vi.value = -20;
-        UpdateSliders(vi);
-    }
 
     public void UpdateSliders(ValuesImage update)
     {
