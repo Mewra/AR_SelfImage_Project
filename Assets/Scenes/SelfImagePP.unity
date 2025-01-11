@@ -1651,8 +1651,8 @@ MonoBehaviour:
   allImages: []
   resourcesImage:
   - {fileID: 11400000, guid: 37e92352bd322a04ab360817d4840afb, type: 2}
-  - {fileID: 11400000, guid: 56509c083036acc4cad3b110617326cf, type: 2}
-  - {fileID: 11400000, guid: ce89ac19c13551a479bdc853a3887417, type: 2}
+  - {fileID: 11400000, guid: c9dc3c4b852d70b4daa96e4ad9f89f1a, type: 2}
+  - {fileID: 11400000, guid: b865f1cb3d750dc459b982aceb85b8d5, type: 2}
   - {fileID: 11400000, guid: 6243b82838487c44c810096541ee96fc, type: 2}
   - {fileID: 11400000, guid: 3ff93e7ce88877c47a0423bdbb5bdff8, type: 2}
   - {fileID: 11400000, guid: 55a92ed529002e04d83b8cb8f744d541, type: 2}
@@ -5051,6 +5051,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4267db295d4a6d64b950e96bbe12803b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sessionReport:
+    player_id: 
+    interactions: []
+    scores: []
+    unlocked_filters: []
+    unlocked_images: []
+    image_base64: 
 --- !u!1 &1765362351
 GameObject:
   m_ObjectHideFlags: 0

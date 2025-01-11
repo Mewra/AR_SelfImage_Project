@@ -122,10 +122,9 @@ public class GameManager : MonoBehaviour
         int clusterCasuale = 99;
         do
         {
-            clusterCasuale = (int)UnityEngine.Random.Range(0, 5);
+            clusterCasuale = (int)UnityEngine.Random.Range(0, 6);
         } while (imgClusters[(int)clusterCasuale].Count < 0);
 
-        Debug.Log("Cluster: " + (Clusters)clusterCasuale);
 
         return (Clusters)clusterCasuale;
     }
