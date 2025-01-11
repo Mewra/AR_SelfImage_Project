@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
@@ -18,6 +19,11 @@ public class GameManager : MonoBehaviour
     public List<ImmagineCompleta> allCompletedImages;
     public Immagine spawnedImage;
 
+    [Header("JoinScene")]
+    public TMP_InputField inputNickname;
+    public TMP_InputField inputRoomCode;
+    public TMP_Text ErrorMessage;
+
     [Header("Swiper")]
     public Image currentImage;
     public Image nextImage;
@@ -28,6 +34,7 @@ public class GameManager : MonoBehaviour
     public GameObject filtroText;
 
     [Header("Scene")]
+    public GameObject loginScene;
     public GameObject mainScene;
     public GameObject panelFinished;
 
@@ -46,7 +53,6 @@ public class GameManager : MonoBehaviour
     public void Awake()
     {
         instance = this;
-        Init();
     }
     public void Init()
     {
@@ -284,6 +290,36 @@ public class GameManager : MonoBehaviour
         mainScene.SetActive(false);
         ARManager.instance.fotoScene.SetActive(true);
         FiltriManager.instance.UIfilter.gameObject.SetActive(true);
+    }
+
+    public void OnClickJoinRoom()
+    {
+        if (inputNickname.text == "" || inputRoomCode.text == "")
+        {
+            StartCoroutine(ShowErrorMessage("Compila i campi vuoti"));
+        }
+        else
+        {
+            Debug.Log("Nick: " + inputNickname.text);
+            Debug.Log("RoomCode: " + inputRoomCode.text);
+            //LinkAPIManager.instance.SendRequestJoinRoom(inputNickname.text, inputRoomCode.text);
+            StartGame();
+        }
+    }
+
+    public void StartGame()
+    {
+        loginScene.SetActive(false);
+        mainScene.SetActive(true);
+        Init();
+    }
+
+    public IEnumerator ShowErrorMessage(string error)
+    {
+        ErrorMessage.text = error;
+        yield return new WaitForSeconds(5f);
+        ErrorMessage.text = "";
+
     }
 
 }

@@ -166,7 +166,7 @@ public class LinkAPIManager : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Errore nella richiesta: " + request.error);
+            StartCoroutine(GameManager.instance.ShowErrorMessage("Errore nella richiesta: " + request.error));
         }
     }
 
