@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.9f1 (ad3870b89536) revision 11352176'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'it' Physical Memory: 16319 MB
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'it' Physical Memory: 16323 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2021.3.9f1\Editor\Unity.exe
 -name
 AssetImportWorker3
 -projectPath
-D:/Utente/ProgettiUnity/AR_Template_Project
+E:/AR_SelfImage_Project
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-35929
-Successfully changed project path to: D:/Utente/ProgettiUnity/AR_Template_Project
-D:/Utente/ProgettiUnity/AR_Template_Project
+59850
+Successfully changed project path to: E:/AR_SelfImage_Project
+E:/AR_SelfImage_Project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,84 +47,81 @@ D:/Utente/ProgettiUnity/AR_Template_Project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 250.16 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 142.96 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.9f1 (ad3870b89536)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Utente/ProgettiUnity/AR_Template_Project/Assets
+[Subsystems] Discovering subsystems at path E:/AR_SelfImage_Project/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
+    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
     Vendor:   NVIDIA
-    VRAM:     5968 MB
-    Driver:   31.0.15.3713
+    VRAM:     8067 MB
+    Driver:   32.0.15.6636
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56180
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56780
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.018482 seconds.
+Registered in 0.011041 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 218.13 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 159.19 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.558 seconds
+- Completed reload, in  0.942 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1560ms)
-		BeginReloadAssembly (191ms)
+	ReloadAssembly (943ms)
+		BeginReloadAssembly (107ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (1143ms)
-			LoadAssemblies (181ms)
-			RebuildTransferFunctionScriptingTraits (1ms)
-			SetupTypeCache (167ms)
+		EndReloadAssembly (631ms)
+			LoadAssemblies (103ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (138ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (133ms)
-			SetupLoadedEditorAssemblies (752ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (399ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (115ms)
+				InitializePlatformSupportModulesInManaged (64ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (218ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (299ms)
-				ProcessInitializeOnLoadMethodAttributes (118ms)
+				RefreshPlugins (159ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (108ms)
+				ProcessInitializeOnLoadMethodAttributes (66ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.009850 seconds.
+Registered in 0.011720 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Utente\ProgettiUnity\AR_Template_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Utente\ProgettiUnity\AR_Template_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 141.42 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 136.92 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 System.Exception: Error! Visual Scripting: couldn't find visual scripting package
-  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00025] in D:\Utente\ProgettiUnity\AR_Template_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:22 
-  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in D:\Utente\ProgettiUnity\AR_Template_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
-  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in D:\Utente\ProgettiUnity\AR_Template_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
-  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in D:\Utente\ProgettiUnity\AR_Template_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
-  at Unity.VisualScripting.PluginContainer.Initialize () [0x0057d] in D:\Utente\ProgettiUnity\AR_Template_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
-  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00012] in D:\Utente\ProgettiUnity\AR_Template_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
-  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00044] in D:\Utente\ProgettiUnity\AR_Template_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
-  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x00037] in D:\Utente\ProgettiUnity\AR_Template_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
-  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0003f] in D:\Utente\ProgettiUnity\AR_Template_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:48 
-  at Unity.VisualScripting.VSUsageUtility..cctor () [0x0000d] in D:\Utente\ProgettiUnity\AR_Template_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00032] in E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:48 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
@@ -133,34 +130,351 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 Package Manager log level set to [2]
 Mono: successfully reloaded assembly
-- Completed reload, in  2.712 seconds
+- Completed reload, in  2.563 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2712ms)
-		BeginReloadAssembly (243ms)
+	ReloadAssembly (2565ms)
+		BeginReloadAssembly (229ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (131ms)
-		EndReloadAssembly (2330ms)
-			LoadAssemblies (140ms)
+			CreateAndSetChildDomain (126ms)
+		EndReloadAssembly (2192ms)
+			LoadAssemblies (130ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (456ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (105ms)
-			SetupLoadedEditorAssemblies (1529ms)
+			SetupTypeCache (427ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (89ms)
+			SetupLoadedEditorAssemblies (1456ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
+				InitializePlatformSupportModulesInManaged (18ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (141ms)
-				BeforeProcessingInitializeOnLoad (170ms)
-				ProcessInitializeOnLoadAttributes (1086ms)
-				ProcessInitializeOnLoadMethodAttributes (98ms)
-				AfterProcessingInitializeOnLoad (13ms)
+				RefreshPlugins (137ms)
+				BeforeProcessingInitializeOnLoad (156ms)
+				ProcessInitializeOnLoadAttributes (1010ms)
+				ProcessInitializeOnLoadMethodAttributes (126ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.20 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 2.56 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6534 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 60 unused Assets / (2.0 MB). Loaded Objects now: 6982.
+Memory consumption went from 253.9 MB to 251.9 MB.
+Total: 69.752300 ms (FindLiveObjects: 1.026500 ms CreateObjectMapping: 0.999600 ms MarkObjects: 65.836200 ms  DeleteObjects: 1.888300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 9319.300629 seconds.
+  path: Assets/Images/Settore F/f.4.4.png
+  artifactKey: Guid(d615049bf232d32468706b83ac313dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore F/f.4.4.png using Guid(d615049bf232d32468706b83ac313dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '790e090cbd32b3ddb85a6605e0b2b83c') in 0.392721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Images/Immagini Intere/A - pittorico-figurativo-grafico/Raymond Pettibon, Self-Portrait, 1991.jpg
+  artifactKey: Guid(43c65ccd6732aaf4eb2a04caef09f489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Immagini Intere/A - pittorico-figurativo-grafico/Raymond Pettibon, Self-Portrait, 1991.jpg using Guid(43c65ccd6732aaf4eb2a04caef09f489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adf0b6736218d9c0f07d3ce45d550869') in 0.115205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Images/Immagini Intere/A - pittorico-figurativo-grafico/pablo-picasso-linocut-tete-de-femme-head-of-a-woman-for-sale-use.jpg
+  artifactKey: Guid(a10710b2e0217cb4095df4c787dd5653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Immagini Intere/A - pittorico-figurativo-grafico/pablo-picasso-linocut-tete-de-femme-head-of-a-woman-for-sale-use.jpg using Guid(a10710b2e0217cb4095df4c787dd5653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd772e52d8f1b61252068f16bd84088db') in 0.224189 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Images/Settore F/f.2.2.png
+  artifactKey: Guid(63113bdec55653948a1e66e78c0311c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore F/f.2.2.png using Guid(63113bdec55653948a1e66e78c0311c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'befb9e4f1de7b6cc0f61566866cb0955') in 0.183211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Images/Immagini Intere/A - pittorico-figurativo-grafico/Egon Schiele Autoritratto con spalla nuda sollevata 1912.jpg
+  artifactKey: Guid(c608681ed1a8f0b46855230b1ab9fd5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Immagini Intere/A - pittorico-figurativo-grafico/Egon Schiele Autoritratto con spalla nuda sollevata 1912.jpg using Guid(c608681ed1a8f0b46855230b1ab9fd5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'debbab6d72a9a0a7c17cea81bd43ebcc') in 0.165801 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Images/Settore F/f.5.4.png
+  artifactKey: Guid(23d5786c0915e9f48b32d5669176808d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore F/f.5.4.png using Guid(23d5786c0915e9f48b32d5669176808d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12333b406abb7dae745a32ffbd79db9e') in 0.146057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Images/Settore F/f.1.3.png
+  artifactKey: Guid(edea809f2a7c5bc44a3053b7aa9bd563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore F/f.1.3.png using Guid(edea809f2a7c5bc44a3053b7aa9bd563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89ae6a97fdba208df438aa774ad896c3') in 0.156466 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Images/Settore F/f.3.2.png
+  artifactKey: Guid(92a866291938a1644877b28d7eda55d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore F/f.3.2.png using Guid(92a866291938a1644877b28d7eda55d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36e4069576cda9aae5cb03b6c5fea282') in 0.140320 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Images/Settore F/f.3.1.png
+  artifactKey: Guid(680e1f17e79df3a43a8014da987ce436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore F/f.3.1.png using Guid(680e1f17e79df3a43a8014da987ce436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3381eed77022adfb283b66f51e79a72c') in 0.149731 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Images/Settore F/f.7.1.png
+  artifactKey: Guid(073b874dd73794e4aa491e2edb72c45c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore F/f.7.1.png using Guid(073b874dd73794e4aa491e2edb72c45c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1af063e4a5491fc0e39822a2c510fb46') in 0.138919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Images/Settore F/f.9.2.png
+  artifactKey: Guid(a0cf7f87d91c31b48b068f5b42b13d18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore F/f.9.2.png using Guid(a0cf7f87d91c31b48b068f5b42b13d18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c23f0b6a8da549bfd3430d3062573679') in 0.185934 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Images/Settore F/f.10.2.png
+  artifactKey: Guid(5071894c94b2e99458ff3718c4b18115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore F/f.10.2.png using Guid(5071894c94b2e99458ff3718c4b18115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cbfa4ce4fa16adebc69fec6eb529ecf') in 0.153853 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40.515465 seconds.
+  path: Assets/Images/Settore E/e.1.4.png
+  artifactKey: Guid(575bd918b770d314283765d60c139fe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore E/e.1.4.png using Guid(575bd918b770d314283765d60c139fe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '024eccb0adbd579ad54b9d251798f623') in 0.161976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Images/Settore E/e.2.2.png
+  artifactKey: Guid(f97f8ec35dae0864e88c16c2852ee961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore E/e.2.2.png using Guid(f97f8ec35dae0864e88c16c2852ee961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30a617fcb2e51651676e62fcbcc63bf6') in 0.162771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Images/Settore E/e.3.2.png
+  artifactKey: Guid(fe2f455db21870746ade062160e9f25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore E/e.3.2.png using Guid(fe2f455db21870746ade062160e9f25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '699ab29bc2d0d0078db55163d494f168') in 0.146107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Images/Settore E/e.4.4.png
+  artifactKey: Guid(0f93d72b6930c3f409585a2915d9ded3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore E/e.4.4.png using Guid(0f93d72b6930c3f409585a2915d9ded3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18f91719b78358878bdaa3886a60baf9') in 0.184368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Images/Settore E/e.3.4.png
+  artifactKey: Guid(0814133235798054fb64b65ef5a43e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore E/e.3.4.png using Guid(0814133235798054fb64b65ef5a43e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e29bbe47dad5db7e9b62a02789f4612') in 0.135509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Images/Settore E/e.9.1.png
+  artifactKey: Guid(6313cf68f688eb84085b3719be7816a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore E/e.9.1.png using Guid(6313cf68f688eb84085b3719be7816a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44cfef8ae9214bba3d57bd643dc88c99') in 0.146144 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Images/Settore E/e.4.2.png
+  artifactKey: Guid(07aa231cb51c640449903efc4aaa7305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore E/e.4.2.png using Guid(07aa231cb51c640449903efc4aaa7305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f95ac4b9a9b6c2fb4d9bf95d547362a') in 0.180518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Images/Settore E/e.7.4.png
+  artifactKey: Guid(3a1cc1d767bd5df4d857952d739038b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore E/e.7.4.png using Guid(3a1cc1d767bd5df4d857952d739038b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d69f3e2022013d164bb913f12327351') in 0.114985 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Images/Settore E/e.9.4.png
+  artifactKey: Guid(516876045b4b4e04c91921cf37ab0461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore E/e.9.4.png using Guid(516876045b4b4e04c91921cf37ab0461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01877a9bb5af2073bfb8547b8ca31369') in 0.130604 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.621972 seconds.
+  path: Assets/Images/Settore D/D.1.3.png
+  artifactKey: Guid(0724a668e7ed4cb45bc2a9313b1a0ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore D/D.1.3.png using Guid(0724a668e7ed4cb45bc2a9313b1a0ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbd58d18217b4c1df70f1468f1e2bd22') in 0.195375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Images/Settore D/D.2.1..png
+  artifactKey: Guid(034bdaa9f23b78145be43ba5beee8c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore D/D.2.1..png using Guid(034bdaa9f23b78145be43ba5beee8c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '045bd423cfef36a80740185bae30a285') in 0.155666 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Images/Settore D/d.7.3.png
+  artifactKey: Guid(e18eddeda2c739b4c8b48a960424d987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore D/d.7.3.png using Guid(e18eddeda2c739b4c8b48a960424d987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b688ed16cbd8101f0b90a5149f90f8d') in 0.161359 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Images/Settore D/d.6.2.png
+  artifactKey: Guid(6ac40cce5dc0011479b8fa9b1f2db87e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore D/d.6.2.png using Guid(6ac40cce5dc0011479b8fa9b1f2db87e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6237fac6ddecf534d05566540a13a65') in 0.139412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Images/Settore D/d.5.3.png
+  artifactKey: Guid(125132e547209a347a78c3716469cb92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore D/d.5.3.png using Guid(125132e547209a347a78c3716469cb92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44270d319d5e3ba1d727cb49c67aad36') in 0.128860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Images/Settore D/D.4.1.png
+  artifactKey: Guid(4ae982d04b133014d825b1aa0f6b4106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore D/D.4.1.png using Guid(4ae982d04b133014d825b1aa0f6b4106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45880bb142d4317572457227d94eaaa0') in 0.187691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Images/Settore D/D.3.2.png
+  artifactKey: Guid(ca4ec0f4f2ed0c44895e23c2b872c288) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore D/D.3.2.png using Guid(ca4ec0f4f2ed0c44895e23c2b872c288) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c87e88cf32968af912d10042aae391f3') in 0.163643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Images/Settore D/d.10.2.png
+  artifactKey: Guid(564981b80d536b149899364a72f19cab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore D/d.10.2.png using Guid(564981b80d536b149899364a72f19cab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '768696b15c9c44fb026694d9a682a16d') in 0.153044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Images/Settore D/D.5.1.png
+  artifactKey: Guid(75497df930a97864bb98ba6c889a5d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore D/D.5.1.png using Guid(75497df930a97864bb98ba6c889a5d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7b17094fe668dfc6e72fada218805f3') in 0.163798 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Images/Settore D/d.6.4.png
+  artifactKey: Guid(faf5e2c407755924d81df3996aac12a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore D/d.6.4.png using Guid(faf5e2c407755924d81df3996aac12a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87418036a22353c7593d589afbd0ec4e') in 0.158298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 119.031676 seconds.
+  path: Assets/Images/Settore A/A_1_1.png
+  artifactKey: Guid(a719af5ea64acb64da0e50083017d507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore A/A_1_1.png using Guid(a719af5ea64acb64da0e50083017d507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '886df240773d3035773767fb4261e34a') in 0.128896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Images/Settore A/ClusterCTemp.asset
+  artifactKey: Guid(b865f1cb3d750dc459b982aceb85b8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore A/ClusterCTemp.asset using Guid(b865f1cb3d750dc459b982aceb85b8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b7127d9c756d593088f5ec66567bcc1') in 0.026095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Images/Settore A/A_1_2.png
+  artifactKey: Guid(886c66a2607a7234fae62e0fe6678937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore A/A_1_2.png using Guid(886c66a2607a7234fae62e0fe6678937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae6f953e0dd9a3f18e4c9cf0abbfccb2') in 0.055281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Images/Settore A/A_2_2.png
+  artifactKey: Guid(5b35b50c639eee4458b40db9454feceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore A/A_2_2.png using Guid(5b35b50c639eee4458b40db9454feceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bc69033ca6b86266a2dd6fccf331c0b') in 0.138350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Images/Settore A/A_2_1.png
+  artifactKey: Guid(68a2b2ab36962654d84412688d175f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore A/A_2_1.png using Guid(68a2b2ab36962654d84412688d175f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c632695308a81ec0c8cdd80c2f5804db') in 0.151467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Images/Settore A/A_1_3.png
+  artifactKey: Guid(56452e93e68b7484ab76bc15333c40cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Settore A/A_1_3.png using Guid(56452e93e68b7484ab76bc15333c40cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d3b47bb339a1db6c476602c4550f30a') in 0.087912 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009594 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 2.32 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in E:\AR_SelfImage_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.815 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2816ms)
+		BeginReloadAssembly (252ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (88ms)
+		EndReloadAssembly (2415ms)
+			LoadAssemblies (174ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (457ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (1262ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (38ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (190ms)
+				ProcessInitializeOnLoadAttributes (869ms)
+				ProcessInitializeOnLoadMethodAttributes (147ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.70 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6350 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (1.9 MB). Loaded Objects now: 7012.
+Memory consumption went from 244.9 MB to 242.9 MB.
+Total: 18.712200 ms (FindLiveObjects: 0.575200 ms CreateObjectMapping: 0.637600 ms MarkObjects: 16.188300 ms  DeleteObjects: 1.309900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
