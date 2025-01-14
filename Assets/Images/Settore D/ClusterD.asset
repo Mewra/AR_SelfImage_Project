@@ -16,7 +16,7 @@ MonoBehaviour:
   - id: D1
     cluster: 3
     completedImage: {fileID: 21300000, guid: 41b6dc6215108d944b375db8b2f42251, type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: D1.0
       image: {fileID: 21300000, guid: b83257c09225eac4ca6381619fc0a245, type: 3}
@@ -66,11 +66,11 @@ MonoBehaviour:
         value: -12
       - cluster: 4
         value: 6
-    filtro: {fileID: 0}
+    filtro: {fileID: 184096011432200753, guid: 91605fc99b488ba419374bcf6bdb6366, type: 3}
   - id: D2
     cluster: 3
     completedImage: {fileID: 21300000, guid: 9549f50618d43b544a7f52973ea32e3f, type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: D2.0
       image: {fileID: 21300000, guid: 034bdaa9f23b78145be43ba5beee8c6e, type: 3}
@@ -136,11 +136,11 @@ MonoBehaviour:
         value: -12
       - cluster: 4
         value: 6
-    filtro: {fileID: 0}
+    filtro: {fileID: 184096011432200753, guid: a2b0c3b34dc89af4c949480b84ca3f3e, type: 3}
   - id: D3
     cluster: 3
     completedImage: {fileID: 21300000, guid: f9e66b50dc8c00d41ab333d124ed5658, type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: D3.0
       image: {fileID: 21300000, guid: 2fd3328ea3d248449b3a6017ad12d5da, type: 3}
@@ -206,11 +206,11 @@ MonoBehaviour:
         value: -12
       - cluster: 4
         value: 6
-    filtro: {fileID: 0}
+    filtro: {fileID: 184096011432200753, guid: 8b75a1c65927572419728d8687eca532, type: 3}
   - id: D4
     cluster: 3
     completedImage: {fileID: 21300000, guid: 8d2d7223f78743f4e8c395d210d01e76, type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: D4.0
       image: {fileID: 21300000, guid: 4ae982d04b133014d825b1aa0f6b4106, type: 3}
@@ -276,11 +276,11 @@ MonoBehaviour:
         value: -12
       - cluster: 4
         value: 6
-    filtro: {fileID: 0}
+    filtro: {fileID: 184096011432200753, guid: d429efd838c716c4ba643dd130a18f1c, type: 3}
   - id: D5
     cluster: 3
     completedImage: {fileID: 21300000, guid: 3ed5744d4519f954789077489749161e, type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: D5.0
       image: {fileID: 21300000, guid: 75497df930a97864bb98ba6c889a5d1a, type: 3}
@@ -346,11 +346,11 @@ MonoBehaviour:
         value: -12
       - cluster: 4
         value: 6
-    filtro: {fileID: 0}
+    filtro: {fileID: 184096011432200753, guid: d429efd838c716c4ba643dd130a18f1c, type: 3}
   - id: D6
     cluster: 3
     completedImage: {fileID: 21300000, guid: c8f5b1fee80235745b5a8df81aef53cd, type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: D6.0
       image: {fileID: 21300000, guid: 41659b09eddcb5a46896581439929f9d, type: 3}
@@ -420,7 +420,7 @@ MonoBehaviour:
   - id: D7
     cluster: 3
     completedImage: {fileID: 21300000, guid: 933685193ac6b8346a337a145c62b548, type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: D7.0
       image: {fileID: 21300000, guid: 1052cc99e9ff47047a945397c7713e84, type: 3}
@@ -490,7 +490,7 @@ MonoBehaviour:
   - id: D8
     cluster: 3
     completedImage: {fileID: 21300000, guid: f1133e060230a6340925a0646163fca2, type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: D8.0
       image: {fileID: 21300000, guid: ba030b8681f371c43bceed1fdb9f104c, type: 3}
@@ -560,7 +560,7 @@ MonoBehaviour:
   - id: D9
     cluster: 3
     completedImage: {fileID: 21300000, guid: e5cec20f9fc336f46afacc569cd80a7a, type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: D9.0
       image: {fileID: 21300000, guid: 45ebfeb6b2657c44a95e829154d32527, type: 3}
@@ -630,7 +630,7 @@ MonoBehaviour:
   - id: D10
     cluster: 3
     completedImage: {fileID: 21300000, guid: 8d1a692b0e0b62743bcc689e743bb468, type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: D10.0
       image: {fileID: 21300000, guid: 72dd495fe6887c54ba9f29cd6866684a, type: 3}

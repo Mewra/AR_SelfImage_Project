@@ -44,5 +44,13 @@ public class SlidersManager : MonoBehaviour
         yield return new WaitForSeconds(3f);
         img.color = Color.white;
     }
+
+    public void ResetSliders()
+    {
+        foreach (SliderClusterModel sc in sliderClusters)
+        {
+            sc.slider.value = 50;//baseSliderValue;
+        }
+    }
 }
 

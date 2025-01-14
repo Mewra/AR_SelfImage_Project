@@ -4,6 +4,8 @@ using UnityEngine;
 using System.IO;
 using TMPro;
 using UnityEngine.XR.ARFoundation;
+using System;
+using UnityEngine.UI;
 
 public class ARManager : MonoBehaviour
 {
@@ -16,6 +18,11 @@ public class ARManager : MonoBehaviour
     public GameObject fotoScene;
     public GameObject UIfotoScene;
     public TMP_Text countdownText;
+
+    [Header("Screenshot")]
+    public string path;
+    public byte[] screenshotBytes;
+    public RawImage uiImage;
 
 
     private void Awake()
@@ -38,23 +45,25 @@ public class ARManager : MonoBehaviour
         screenshotTexture.ReadPixels(new Rect(0, 0, width, height), 0, 0);
         screenshotTexture.Apply();
 
-        // Conversione in byte array (formato JPG)
-        byte[] screenshotBytes = screenshotTexture.EncodeToJPG();
+        screenshotBytes = screenshotTexture.EncodeToJPG();
 
         // Salvataggio su disco
-        string path = Path.Combine(Application.persistentDataPath, screenshotName);
+        path = Path.Combine(Application.persistentDataPath, screenshotName);
         File.WriteAllBytes(path, screenshotBytes);
 
         Debug.Log($"Screenshot salvato in: {path}");
-
+        uiImage.texture = screenshotTexture;
+        uiImage.gameObject.SetActive(true);
+        LinkAPIManager.instance.SendReportImage();
         // Pulizia della memoria
-        Destroy(screenshotTexture);
+        //Destroy(screenshotTexture);
     }
     // Start is called before the first frame update
     public void TakeScreenshot()
     {
         StartCoroutine(CaptureScreenshot());
     }
+
 
     public void OnClickScatta()
     {
@@ -86,57 +95,10 @@ public class ARManager : MonoBehaviour
     }
     #endregion
 
-    #region Occlusion
-
-    /*
-    [Header("Occlusion")]
-    public Camera arCamera;
-    public GameObject backgroundObject;
-    public AROcclusionManager occlusionManager;
-    public float distanceBehind = 8.0f;
-
-    void Update()
+    public void ResetFotoScene()
     {
-        /*
-        // Posiziona il background dietro
-        Vector3 positionBehind = arCamera.transform.position + arCamera.transform.forward * distanceBehind; 
-        backgroundObject.transform.position = positionBehind;
-        backgroundObject.transform.rotation = Quaternion.LookRotation(arCamera.transform.forward);
-        backgroundObject.GetComponent<MeshRenderer>().material.color = Color.green;
-        */
-
-        /*
-        // Controlla l'occlusione (solo se supportato dal dispositivo)
-        if (occlusionManager.environmentDepthTexture != null)
-        {
-            backgroundObject.GetComponent<MeshRenderer>().material.color = Color.blue;
-            Texture2D depthTexture = occlusionManager.environmentDepthTexture;
-            Vector3 screenPoint = arCamera.WorldToScreenPoint(backgroundObject.transform.position);
-            float depthAtPoint = GetDepthAtScreenPoint(depthTexture, screenPoint);
-
-            // Nascondi il background se è davanti al corpo
-            if (depthAtPoint > distanceBehind)
-            {
-                backgroundObject.SetActive(false);
-                backgroundObject.GetComponent<MeshRenderer>().material.color = Color.black;
-            }
-            else
-            {
-                backgroundObject.SetActive(true);
-                backgroundObject.GetComponent<MeshRenderer>().material.color = Color.red;
-            }
-        }
-        
+        fotoScene.SetActive(false);
+        UIfotoScene.SetActive(true);
+        uiImage.gameObject.SetActive(false);
     }
-
-    float GetDepthAtScreenPoint(Texture2D depthTexture, Vector3 screenPoint)
-    {
-        int x = Mathf.Clamp((int)(screenPoint.x / Screen.width * depthTexture.width), 0, depthTexture.width - 1);
-        int y = Mathf.Clamp((int)(screenPoint.y / Screen.height * depthTexture.height), 0, depthTexture.height - 1);
-        Color depthColor = depthTexture.GetPixel(x, y);
-        return depthColor.r; // Profondità normalizzata
-    }
-
-*/
-    #endregion
 }

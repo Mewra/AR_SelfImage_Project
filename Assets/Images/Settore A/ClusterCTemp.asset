@@ -16,7 +16,7 @@ MonoBehaviour:
   - id: C1
     cluster: 2
     completedImage: {fileID: 21300000, guid: b6511d5264118a643968f8beff675337, type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: A1.0
       image: {fileID: 21300000, guid: 45fbf64f913156d49996db111cd73d52, type: 3}
@@ -102,7 +102,7 @@ MonoBehaviour:
   - id: C2
     cluster: 2
     completedImage: {fileID: 21300000, guid: c608681ed1a8f0b46855230b1ab9fd5e, type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: A2.0
       image: {fileID: 21300000, guid: b6a5fb83411a98e42ad5aa81ea11eeef, type: 3}

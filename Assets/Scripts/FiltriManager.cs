@@ -19,6 +19,9 @@ public class FiltriManager : MonoBehaviour
     private Image defUIFilter;
     private GameObject def3DObject;
 
+    [Header("Default")]
+    public VolumeProfile defaultVolume;
+
 
     private void Awake()
     {
@@ -27,33 +30,47 @@ public class FiltriManager : MonoBehaviour
 
     public void UpdateFilters(FiltroModel filtro)
     {
-        if (filtro.cameraFilter != null)
+        if (filtro != null)
         {
-            Debug.Log("Aggiungo CameraFilter");
-            GlobalCameraFilter.profile = filtro.cameraFilter;
-        }
-        if (filtro.faceFilter != null)
-        {
-            Debug.Log("Aggiungo FaceFilter " + filtro.faceFilter.gameObject.name);
-            Instantiate(filtro.faceFilter, faceARDefault.transform);
-            //facemesh.GetComponent<SkinnedMeshRenderer>().material = filtro.faceFilter;
-            //faceARDefault.GetComponent<MeshRenderer>().material = filtro.faceFilter;
-        }
-        if (filtro.effettoParticellare != null)
-        {
-            Debug.Log("Aggiungo EffPartic");
-            Instantiate(filtro.effettoParticellare, faceARDefault.transform);
-        }
-        if (filtro.UIFilter != null)
-        {
-            Debug.Log("Aggiungo UI");
-            UIfilter.sprite = filtro.UIFilter;
-        }
-        if(filtro._3DObject != null)
-        {
-            Debug.Log("Aggiungo 3D OBJ " + filtro._3DObject.gameObject.name);
-            Instantiate(filtro._3DObject, faceARDefault.transform);
+            if (filtro.cameraFilter != null)
+            {
+                Debug.Log("Aggiungo CameraFilter");
+                GlobalCameraFilter.profile = filtro.cameraFilter;
+            }
+            if (filtro.faceFilter != null)
+            {
+                Debug.Log("Aggiungo FaceFilter " + filtro.faceFilter.gameObject.name);
+                Instantiate(filtro.faceFilter, faceARDefault.transform);
+                //facemesh.GetComponent<SkinnedMeshRenderer>().material = filtro.faceFilter;
+                //faceARDefault.GetComponent<MeshRenderer>().material = filtro.faceFilter;
+            }
+            if (filtro.effettoParticellare != null)
+            {
+                Debug.Log("Aggiungo EffPartic");
+                Instantiate(filtro.effettoParticellare, faceARDefault.transform);
+            }
+            if (filtro.UIFilter != null)
+            {
+                Debug.Log("Aggiungo UI");
+                UIfilter.sprite = filtro.UIFilter;
+            }
+            if (filtro._3DObject != null)
+            {
+                Debug.Log("Aggiungo 3D OBJ " + filtro._3DObject.gameObject.name);
+                Instantiate(filtro._3DObject, faceARDefault.transform);
+            }
         }
 
+    }
+
+    public void ResetAllFilters()
+    {
+        foreach(Transform go in faceARDefault.transform)
+        {
+            Destroy(go.gameObject);
+        }
+
+        GlobalCameraFilter.profile = defaultVolume;
+        UIfilter.sprite = null;
     }
 }

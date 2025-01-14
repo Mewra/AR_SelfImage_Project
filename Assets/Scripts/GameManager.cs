@@ -222,7 +222,14 @@ public class GameManager : MonoBehaviour
             {
 
                 UnlockFilter(icomp);
-                LinkAPIManager.instance.AddUnlockedFilters(icomp.filtro.id_nome);
+                if (icomp.filtro != null)
+                {
+                    LinkAPIManager.instance.AddUnlockedFilters(icomp.filtro.id_nome);
+                }
+                else
+                {
+                    LinkAPIManager.instance.AddUnlockedFilters("ids");
+                }
 
             }
             LinkAPIManager.instance.AddUnlockedImage(icomp.IDCompleteImage);
@@ -246,7 +253,7 @@ public class GameManager : MonoBehaviour
     public void UnlockFilter(ImmagineCompleta ic)
     {
         filterUnlocked = true;
-        FiltriManager.instance.UpdateFilters(ic.filtro); //controll
+        FiltriManager.instance.UpdateFilters(ic.filtro); 
     }
 
     public int CountUnlockCardComplete(Clusters c, string idCardComplete)
@@ -300,10 +307,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Nick: " + inputNickname.text);
-            Debug.Log("RoomCode: " + inputRoomCode.text);
-            //LinkAPIManager.instance.SendRequestJoinRoom(inputNickname.text, inputRoomCode.text);
-            StartGame();
+            LinkAPIManager.instance.SendRequestJoinRoom(inputNickname.text, inputRoomCode.text);
         }
     }
 
@@ -320,6 +324,17 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(5f);
         ErrorMessage.text = "";
 
+    }
+
+    public void ResetGame()
+    {
+        LinkAPIManager.instance.ResetSessionReport();
+        SlidersManager.instance.ResetSliders();
+        ARManager.instance.ResetFotoScene();
+        FiltriManager.instance.ResetAllFilters();
+        mainScene.SetActive(true);
+        FiltriManager.instance.UIfilter.gameObject.SetActive(false);
+        Init();
     }
 
 }

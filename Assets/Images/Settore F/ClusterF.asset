@@ -16,7 +16,7 @@ MonoBehaviour:
   - id: F.1
     cluster: 5
     completedImage: {fileID: 21300000, guid: 1fc0387fe8a18d34f845350339c1c96d, type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: 1
       image: {fileID: 21300000, guid: 550f577659365eb4b8d0934530fe734d, type: 3}
@@ -70,7 +70,7 @@ MonoBehaviour:
   - id: F.2
     cluster: 5
     completedImage: {fileID: 21300000, guid: e562ba7c41383b644952399844dc729c, type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: 1
       image: {fileID: 21300000, guid: f14e4ee634d6cf5458b278f604134f5d, type: 3}
@@ -124,7 +124,7 @@ MonoBehaviour:
   - id: F.3
     cluster: 5
     completedImage: {fileID: 21300000, guid: fa192ec2eb3597640bbe17434dbded20, type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: 1
       image: {fileID: 21300000, guid: 680e1f17e79df3a43a8014da987ce436, type: 3}
@@ -194,7 +194,7 @@ MonoBehaviour:
   - id: F.4
     cluster: 5
     completedImage: {fileID: 21300000, guid: 5217b85e18459264d8838f73213e3017, type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: 1
       image: {fileID: 21300000, guid: 1b5c1e12f0a52c349baece1a1235363f, type: 3}
@@ -264,7 +264,7 @@ MonoBehaviour:
   - id: F.5
     cluster: 5
     completedImage: {fileID: 21300000, guid: a308d13bfec9ecc4dac8cf0b607e8199, type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: 1
       image: {fileID: 21300000, guid: 915db7e264bfe11469f1e3d1fcea86f1, type: 3}
@@ -334,7 +334,7 @@ MonoBehaviour:
   - id: F.6
     cluster: 5
     completedImage: {fileID: 21300000, guid: d177647436793c1408f9ea092ac9452e, type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: 1
       image: {fileID: 21300000, guid: 2a61b09ef5398fe439f925da93c82938, type: 3}
@@ -404,7 +404,7 @@ MonoBehaviour:
   - id: F.7
     cluster: 5
     completedImage: {fileID: 21300000, guid: 73f657699c41d564fa1a07890fc123b0, type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: 1
       image: {fileID: 21300000, guid: 073b874dd73794e4aa491e2edb72c45c, type: 3}
@@ -458,7 +458,7 @@ MonoBehaviour:
   - id: F.8
     cluster: 5
     completedImage: {fileID: 21300000, guid: d168cc596777d4e4b856891e9bbfea50, type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: 1
       image: {fileID: 21300000, guid: 61522e4cbe502014f97cf309d43fa7f9, type: 3}
@@ -528,7 +528,7 @@ MonoBehaviour:
   - id: F.9
     cluster: 5
     completedImage: {fileID: 21300000, guid: dd79a6d0ea79772478e00e10ef339f3a, type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: 1
       image: {fileID: 21300000, guid: bc90cb5a4e4921b40af32742dd19f814, type: 3}
@@ -582,7 +582,7 @@ MonoBehaviour:
   - id: F.10
     cluster: 5
     completedImage: {fileID: 21300000, guid: 1a0db39f16045f3449617ccaa96ae279, type: 3}
-    hasFilter: 0
+    hasFilter: 1
     images:
     - id: 1
       image: {fileID: 21300000, guid: c8bdc3376e1cbce4abf5fdd9c3d8e1e7, type: 3}
