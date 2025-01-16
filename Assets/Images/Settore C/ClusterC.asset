@@ -15,7 +15,7 @@ MonoBehaviour:
   listImageConfig:
   - id: c.1
     cluster: 2
-    completedImage: {fileID: 21300000, guid: 44876e77982eb2446bce1e1944215fe1, type: 3}
+    completedImage: {fileID: 21300000, guid: a3ef3d8af03a2e245a4f266d3d21ec5b, type: 3}
     hasFilter: 1
     images:
     - id: c.1.1
@@ -85,7 +85,7 @@ MonoBehaviour:
     filtro: {fileID: 184096011432200753, guid: 409d627e18370414a824327c601f59ff, type: 3}
   - id: c.2
     cluster: 2
-    completedImage: {fileID: 21300000, guid: fb9c97723724e7e4fa1991b4017e5b38, type: 3}
+    completedImage: {fileID: 21300000, guid: 674c4689be4471644a05a9e39631d307, type: 3}
     hasFilter: 1
     images:
     - id: c.2.1
@@ -155,7 +155,7 @@ MonoBehaviour:
     filtro: {fileID: 184096011432200753, guid: 409d627e18370414a824327c601f59ff, type: 3}
   - id: c.3
     cluster: 2
-    completedImage: {fileID: 21300000, guid: 7b646e3819aeef94597509414c9bc572, type: 3}
+    completedImage: {fileID: 21300000, guid: bc5763fe4486eb44eb80c0c239b3912e, type: 3}
     hasFilter: 1
     images:
     - id: c.3.1
@@ -225,7 +225,7 @@ MonoBehaviour:
     filtro: {fileID: 184096011432200753, guid: 5db6f0eea2c0708438c49718c0f365eb, type: 3}
   - id: c.4
     cluster: 2
-    completedImage: {fileID: 21300000, guid: 77e08ed4dc7e3884d9d8cdd8279c6dfe, type: 3}
+    completedImage: {fileID: 21300000, guid: 77827eda9366de745b228e7d4491e9e4, type: 3}
     hasFilter: 1
     images:
     - id: c.4.1
@@ -311,7 +311,7 @@ MonoBehaviour:
     filtro: {fileID: 184096011432200753, guid: fc6e265edd795da4eaa65725cd79f682, type: 3}
   - id: c.5
     cluster: 2
-    completedImage: {fileID: 21300000, guid: c2edd0b440eecf24fb8891ba24cb88e9, type: 3}
+    completedImage: {fileID: 21300000, guid: f5ce94d9cf1e8054fb33a2f250c50a95, type: 3}
     hasFilter: 1
     images:
     - id: c.5.1
@@ -397,7 +397,7 @@ MonoBehaviour:
     filtro: {fileID: 184096011432200753, guid: fc6e265edd795da4eaa65725cd79f682, type: 3}
   - id: c.6
     cluster: 2
-    completedImage: {fileID: 21300000, guid: 4a09f9abf91dd6b43ad47aed6657570a, type: 3}
+    completedImage: {fileID: 21300000, guid: d45baf2776f78b44c96aa351c261e355, type: 3}
     hasFilter: 1
     images:
     - id: c.6.1
@@ -521,7 +521,7 @@ MonoBehaviour:
     filtro: {fileID: 184096011432200753, guid: 409d627e18370414a824327c601f59ff, type: 3}
   - id: c.8
     cluster: 2
-    completedImage: {fileID: 21300000, guid: 7c509ac689a51174d87dcafef2a2dd4d, type: 3}
+    completedImage: {fileID: 21300000, guid: a0f9496513692384dbfcf68f3d443064, type: 3}
     hasFilter: 1
     images:
     - id: c.8.1

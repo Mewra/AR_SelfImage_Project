@@ -15,7 +15,7 @@ MonoBehaviour:
   listImageConfig:
   - id: e.1
     cluster: 4
-    completedImage: {fileID: 21300000, guid: 1031d92b7898a5e4eb4b4535d013bdb3, type: 3}
+    completedImage: {fileID: 21300000, guid: 902d435534248a34b812cd92c3deb030, type: 3}
     hasFilter: 1
     images:
     - id: e.1.1
@@ -295,7 +295,7 @@ MonoBehaviour:
     filtro: {fileID: 184096011432200753, guid: 35768e9c827b94b4d85ff3643507fc4b, type: 3}
   - id: e.5
     cluster: 4
-    completedImage: {fileID: 21300000, guid: e6c065d3b4f7d6943b161db88022e083, type: 3}
+    completedImage: {fileID: 21300000, guid: 47dbbffad5ddbc84bbf25eddc4232c6e, type: 3}
     hasFilter: 1
     images:
     - id: e.5.1
@@ -489,7 +489,7 @@ MonoBehaviour:
     filtro: {fileID: 184096011432200753, guid: 981fd0e6ba78e514f97d942e74a063e2, type: 3}
   - id: e.8
     cluster: 4
-    completedImage: {fileID: 21300000, guid: 9c2762eb85c9fe043adcc700db8f8cca, type: 3}
+    completedImage: {fileID: 21300000, guid: a11ac5b5614cd524d9357ad2cdab48e4, type: 3}
     hasFilter: 1
     images:
     - id: e.8.1
