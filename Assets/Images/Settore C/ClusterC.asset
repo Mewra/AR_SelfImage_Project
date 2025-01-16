@@ -1,0 +1,843 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 347e2d792aff2cc47b0c94700a028741, type: 3}
+  m_Name: ClusterC
+  m_EditorClassIdentifier: 
+  listImageConfig:
+  - id: c.1
+    cluster: 2
+    completedImage: {fileID: 21300000, guid: 44876e77982eb2446bce1e1944215fe1, type: 3}
+    hasFilter: 1
+    images:
+    - id: c.1.1
+      image: {fileID: 21300000, guid: 977c96f0dad7cdc4a8ba1ca828682e54, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.1.2
+      image: {fileID: 21300000, guid: 02036b49bee42d047be38d2e1040cd8a, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.1.3
+      image: {fileID: 21300000, guid: c266e910865b65a408229da8ed205970, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.1.4
+      image: {fileID: 21300000, guid: d214400def002714bba4ef19ef2fc0c0, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    filtro: {fileID: 184096011432200753, guid: 409d627e18370414a824327c601f59ff, type: 3}
+  - id: c.2
+    cluster: 2
+    completedImage: {fileID: 21300000, guid: fb9c97723724e7e4fa1991b4017e5b38, type: 3}
+    hasFilter: 1
+    images:
+    - id: c.2.1
+      image: {fileID: 21300000, guid: 9c19264d1f4151841a4da3497aff6e3d, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.2.2
+      image: {fileID: 21300000, guid: efc1a967dddc3364394684e84e3f808f, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.2.3
+      image: {fileID: 21300000, guid: 3b17ec3a87b64d14ca698761ac199369, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.2.4
+      image: {fileID: 21300000, guid: a09839a9d044e1d4cb6cd0df9f369e69, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    filtro: {fileID: 184096011432200753, guid: 409d627e18370414a824327c601f59ff, type: 3}
+  - id: c.3
+    cluster: 2
+    completedImage: {fileID: 21300000, guid: 7b646e3819aeef94597509414c9bc572, type: 3}
+    hasFilter: 1
+    images:
+    - id: c.3.1
+      image: {fileID: 21300000, guid: 2ba56be7474f6d249a9baf6c1e7fa6cf, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.3.2
+      image: {fileID: 21300000, guid: cf1cd15aefb6dd44889c364a50ece696, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.3.3
+      image: {fileID: 21300000, guid: 02354f632659aa74a9f5467e3a58b760, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.3.4
+      image: {fileID: 21300000, guid: 6282b07794dbb89409803e34b3d75b7c, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    filtro: {fileID: 184096011432200753, guid: 5db6f0eea2c0708438c49718c0f365eb, type: 3}
+  - id: c.4
+    cluster: 2
+    completedImage: {fileID: 21300000, guid: 77e08ed4dc7e3884d9d8cdd8279c6dfe, type: 3}
+    hasFilter: 1
+    images:
+    - id: c.4.1
+      image: {fileID: 21300000, guid: 6cd6c181f7266fe4da22de9944e3ab37, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.4.2
+      image: {fileID: 21300000, guid: 3cf48cd86d3ff324195ee2dba2a770b3, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.4.3
+      image: {fileID: 21300000, guid: 3e7a5eb9f0ed3134fa08514de23638d8, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.4.4
+      image: {fileID: 21300000, guid: 436d3df681619164bb524788efece268, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.4.5
+      image: {fileID: 21300000, guid: 9e969faeaf476764e8264b90818721e9, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    filtro: {fileID: 184096011432200753, guid: fc6e265edd795da4eaa65725cd79f682, type: 3}
+  - id: c.5
+    cluster: 2
+    completedImage: {fileID: 21300000, guid: c2edd0b440eecf24fb8891ba24cb88e9, type: 3}
+    hasFilter: 1
+    images:
+    - id: c.5.1
+      image: {fileID: 21300000, guid: d34770a3e28c05c4895d5970560d2a4e, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.5.2
+      image: {fileID: 21300000, guid: f5b6c850d29b2c6478f8e1af56407e5f, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.5.3
+      image: {fileID: 21300000, guid: 45c253ddc381e58409a15cd96afc749f, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.5.4
+      image: {fileID: 21300000, guid: 9d796ab7143fb584ea056251d47f6c53, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.5.5
+      image: {fileID: 21300000, guid: 135d4721fef888f4dabe9de288672ea5, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    filtro: {fileID: 184096011432200753, guid: fc6e265edd795da4eaa65725cd79f682, type: 3}
+  - id: c.6
+    cluster: 2
+    completedImage: {fileID: 21300000, guid: 4a09f9abf91dd6b43ad47aed6657570a, type: 3}
+    hasFilter: 1
+    images:
+    - id: c.6.1
+      image: {fileID: 21300000, guid: 382221c4fac243747bb731156f67c7f1, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.6.2
+      image: {fileID: 21300000, guid: 456449621cf5b88468f658bdd3dd5b0b, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.6.3
+      image: {fileID: 21300000, guid: 9a8cf3a7ceb52f948911bcf346a03188, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    filtro: {fileID: 184096011432200753, guid: fc6e265edd795da4eaa65725cd79f682, type: 3}
+  - id: c.7
+    cluster: 2
+    completedImage: {fileID: 21300000, guid: 101f4ed99191fe647aeab930d60eb0dd, type: 3}
+    hasFilter: 1
+    images:
+    - id: c.7.1
+      image: {fileID: 21300000, guid: ff7ae1a29320adc4d87c4bbeee95a630, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.7.2
+      image: {fileID: 21300000, guid: e6f8379f881165f4f9474f450a6db161, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.7.3
+      image: {fileID: 21300000, guid: 3f9ced6aae9547b44b7fd6e483c797ee, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.7.4
+      image: {fileID: 21300000, guid: 88fa3bee1ac158a4a94ca07bc019f5eb, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    filtro: {fileID: 184096011432200753, guid: 409d627e18370414a824327c601f59ff, type: 3}
+  - id: c.8
+    cluster: 2
+    completedImage: {fileID: 21300000, guid: 7c509ac689a51174d87dcafef2a2dd4d, type: 3}
+    hasFilter: 1
+    images:
+    - id: c.8.1
+      image: {fileID: 21300000, guid: ad93fe53150dd8e43938cfc8d545d743, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.8.2
+      image: {fileID: 21300000, guid: 4ed82501ba3b90049bb5bddd20504e51, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.8.3
+      image: {fileID: 21300000, guid: ce084aabb5f814048b8f70d8921e5a4e, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.8.4
+      image: {fileID: 21300000, guid: ba0ff1ab5c13ecb4eb0c43c3ba6df967, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.8.5
+      image: {fileID: 21300000, guid: 80200f10039d2364396e877ea1cdf7e6, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.8.6
+      image: {fileID: 21300000, guid: b9faa302b67096a42961294901313c5a, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    filtro: {fileID: 184096011432200753, guid: 5db6f0eea2c0708438c49718c0f365eb, type: 3}
+  - id: c.9
+    cluster: 2
+    completedImage: {fileID: 21300000, guid: a34dd1544dd2625409548a6faffebfab, type: 3}
+    hasFilter: 1
+    images:
+    - id: c.9.1
+      image: {fileID: 21300000, guid: 7ef4ee9ef62b7de4d87ab606cea67867, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.9.2
+      image: {fileID: 21300000, guid: c87882ac75451c74785c426698d5124a, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.9.3
+      image: {fileID: 21300000, guid: 296db16de0665ed41ab408b94b1b1aea, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.9.4
+      image: {fileID: 21300000, guid: 98fec782a50ef584aa73d13d8dae2954, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.9.5
+      image: {fileID: 21300000, guid: e076bfbd67b8d4f43a063aa0ecf5b976, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.8.6
+      image: {fileID: 21300000, guid: b9faa302b67096a42961294901313c5a, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    filtro: {fileID: 184096011432200753, guid: fc6e265edd795da4eaa65725cd79f682, type: 3}
+  - id: c.10
+    cluster: 2
+    completedImage: {fileID: 21300000, guid: 44bdcb2be213d9747989d219aaddc198, type: 3}
+    hasFilter: 1
+    images:
+    - id: c.10.1
+      image: {fileID: 21300000, guid: 822a9932f9f6068478d4286593ee47c8, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.10.2
+      image: {fileID: 21300000, guid: 6a7a838d5294e9244a03ccbe2e09f461, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.10.3
+      image: {fileID: 21300000, guid: 13371c5bd1514ce4d806613e27f90b57, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.10.4
+      image: {fileID: 21300000, guid: a46b0f3f478e41a498d70dc4a1ca4b13, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.10.5
+      image: {fileID: 21300000, guid: 4b57b1ff09a22c146a9b77089beaaa22, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.10.6
+      image: {fileID: 21300000, guid: 89dfac7e66737a8409518bd0eae074a0, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    - id: c.10.7
+      image: {fileID: 21300000, guid: 706c8ae942996144c9987854c5e14cfc, type: 3}
+      AcceptedValues:
+      - cluster: 1
+        value: -4
+      - cluster: 2
+        value: 12
+      - cluster: 5
+        value: -8
+      RejectedValues:
+      - cluster: 1
+        value: 4
+      - cluster: 2
+        value: -12
+      - cluster: 5
+        value: 8
+    filtro: {fileID: 184096011432200753, guid: fc6e265edd795da4eaa65725cd79f682, type: 3}

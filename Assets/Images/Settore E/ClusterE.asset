@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: ClusterE
   m_EditorClassIdentifier: 
   listImageConfig:
-  - id: E.1
+  - id: e.1
     cluster: 4
     completedImage: {fileID: 21300000, guid: 1031d92b7898a5e4eb4b4535d013bdb3, type: 3}
     hasFilter: 1
     images:
-    - id: 1
+    - id: e.1.1
       image: {fileID: 21300000, guid: e1dd1ef19c135d84da8cc228af3be29a, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -34,7 +34,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 2
+    - id: e.1.2
       image: {fileID: 21300000, guid: 26bac7654ef1d3349baac1e9c0547b7d, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -50,7 +50,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 3
+    - id: e.1.3
       image: {fileID: 21300000, guid: 24894847f29ce0448bd7a9c5a5b99a4d, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 4
+    - id: e.1.4
       image: {fileID: 21300000, guid: 575bd918b770d314283765d60c139fe8, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -82,13 +82,13 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    filtro: {fileID: 0}
-  - id: E.2
+    filtro: {fileID: 184096011432200753, guid: 981fd0e6ba78e514f97d942e74a063e2, type: 3}
+  - id: e.2
     cluster: 4
     completedImage: {fileID: 21300000, guid: e1c07b304dd5e7543b030ac4bfa2a45c, type: 3}
     hasFilter: 1
     images:
-    - id: 1
+    - id: e.2.1
       image: {fileID: 21300000, guid: d746c7231c8704446b695790f9e0768f, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -104,7 +104,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 2
+    - id: e.2.2
       image: {fileID: 21300000, guid: f97f8ec35dae0864e88c16c2852ee961, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -120,7 +120,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 3
+    - id: e.2.3
       image: {fileID: 21300000, guid: e89bd0d64e1dbbb478dd6cec1bbbb6b9, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -136,7 +136,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 4
+    - id: e.2.4
       image: {fileID: 21300000, guid: 374ce5d198d555346911b7a1384e0666, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -152,13 +152,13 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    filtro: {fileID: 0}
-  - id: E.3
+    filtro: {fileID: 184096011432200753, guid: 35768e9c827b94b4d85ff3643507fc4b, type: 3}
+  - id: e.3
     cluster: 4
     completedImage: {fileID: 21300000, guid: 163f162165ae4c6418f112e9f3afa4e8, type: 3}
     hasFilter: 1
     images:
-    - id: 1
+    - id: e.3.1
       image: {fileID: 21300000, guid: bc3ecfe61a04de84687414169b00428f, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -174,7 +174,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 2
+    - id: e.3.2
       image: {fileID: 21300000, guid: fe2f455db21870746ade062160e9f25e, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -190,7 +190,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 3
+    - id: e.3.3
       image: {fileID: 21300000, guid: 746fdae23fb02534cb8618037207d77a, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -206,7 +206,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 4
+    - id: e.3.4
       image: {fileID: 21300000, guid: 0814133235798054fb64b65ef5a43e7c, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -222,13 +222,13 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    filtro: {fileID: 0}
-  - id: E.4
+    filtro: {fileID: 184096011432200753, guid: 981fd0e6ba78e514f97d942e74a063e2, type: 3}
+  - id: e.4
     cluster: 4
     completedImage: {fileID: 21300000, guid: da60e9078fde0a748a52a14939996e01, type: 3}
     hasFilter: 1
     images:
-    - id: 1
+    - id: e.4.1
       image: {fileID: 21300000, guid: 03853f8fc89190949b3572d28af83f63, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -244,7 +244,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 2
+    - id: e.4.2
       image: {fileID: 21300000, guid: 07aa231cb51c640449903efc4aaa7305, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -260,7 +260,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 3
+    - id: e.4.3
       image: {fileID: 21300000, guid: 1adb0e833b446844da439e7bf7674a5c, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -276,7 +276,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 4
+    - id: e.4.4
       image: {fileID: 21300000, guid: 0f93d72b6930c3f409585a2915d9ded3, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -292,13 +292,13 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    filtro: {fileID: 0}
-  - id: E.5
+    filtro: {fileID: 184096011432200753, guid: 35768e9c827b94b4d85ff3643507fc4b, type: 3}
+  - id: e.5
     cluster: 4
     completedImage: {fileID: 21300000, guid: e6c065d3b4f7d6943b161db88022e083, type: 3}
     hasFilter: 1
     images:
-    - id: 1
+    - id: e.5.1
       image: {fileID: 21300000, guid: 9f1a08eff7f21024ba2a3edca27ea0bc, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -314,7 +314,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 2
+    - id: e.5.2
       image: {fileID: 21300000, guid: 22e3d8812810b0e478afdac90db4ebae, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -330,7 +330,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 3
+    - id: e.5.3
       image: {fileID: 21300000, guid: 4378723b8a0e18c438a499b80d7cd250, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -346,13 +346,13 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    filtro: {fileID: 0}
-  - id: E.6
+    filtro: {fileID: 184096011432200753, guid: 82fd74d4ac328554993dfb1def759249, type: 3}
+  - id: e.6
     cluster: 4
     completedImage: {fileID: 21300000, guid: 11f1e78b7c9473c4d8be1fd6c900a7b0, type: 3}
     hasFilter: 1
     images:
-    - id: 1
+    - id: e.6.1
       image: {fileID: 21300000, guid: 070a17d2b4e213c4bb6841b48731c6b2, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -368,7 +368,23 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 2
+    - id: e.6.2
+      image: {fileID: 21300000, guid: 474a03d6d13349142aba43d089e075d6, type: 3}
+      AcceptedValues:
+      - cluster: 0
+        value: -8
+      - cluster: 3
+        value: -4
+      - cluster: 4
+        value: 12
+      RejectedValues:
+      - cluster: 0
+        value: 8
+      - cluster: 3
+        value: 4
+      - cluster: 4
+        value: -12
+    - id: e.6.3
       image: {fileID: 21300000, guid: 54e12e12db4752740bca635dedcfc407, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -384,7 +400,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 3
+    - id: e.6.4
       image: {fileID: 21300000, guid: 475ccce2b6be1d84a9a549e6eaca4260, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -400,13 +416,13 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    filtro: {fileID: 0}
-  - id: E.7
+    filtro: {fileID: 184096011432200753, guid: 82fd74d4ac328554993dfb1def759249, type: 3}
+  - id: e.7
     cluster: 4
     completedImage: {fileID: 21300000, guid: 2eb964f55d7ad69488872e4433d02851, type: 3}
     hasFilter: 1
     images:
-    - id: 1
+    - id: e.7.1
       image: {fileID: 21300000, guid: 0dc360b1addaecd42bdaa699083a2453, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -422,7 +438,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 2
+    - id: e.7.2
       image: {fileID: 21300000, guid: 39214b5a712770c4aba50de707f8ed98, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -438,7 +454,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 3
+    - id: e.7.3
       image: {fileID: 21300000, guid: 15c74f3d422cb2e44b16139456790555, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -454,7 +470,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 4
+    - id: e.7.4
       image: {fileID: 21300000, guid: 3a1cc1d767bd5df4d857952d739038b7, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -470,13 +486,13 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    filtro: {fileID: 0}
-  - id: E.8
+    filtro: {fileID: 184096011432200753, guid: 981fd0e6ba78e514f97d942e74a063e2, type: 3}
+  - id: e.8
     cluster: 4
     completedImage: {fileID: 21300000, guid: 9c2762eb85c9fe043adcc700db8f8cca, type: 3}
     hasFilter: 1
     images:
-    - id: 1
+    - id: e.8.1
       image: {fileID: 21300000, guid: 674c73c34b21ef440b2eaf4af67c3aa4, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -492,7 +508,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 2
+    - id: e.8.1
       image: {fileID: 21300000, guid: 3c9720095fefb0d4cb73278a4940ba47, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -508,7 +524,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 3
+    - id: e.8.3
       image: {fileID: 21300000, guid: 16ade8c12d086684295080dae9d886ea, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -524,7 +540,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 4
+    - id: e.8.4
       image: {fileID: 21300000, guid: 3ca846b01625e5d40bcd5f716a803e23, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -540,13 +556,13 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    filtro: {fileID: 0}
-  - id: E.9
+    filtro: {fileID: 184096011432200753, guid: 82fd74d4ac328554993dfb1def759249, type: 3}
+  - id: e.9
     cluster: 4
     completedImage: {fileID: 21300000, guid: 9c2762eb85c9fe043adcc700db8f8cca, type: 3}
     hasFilter: 1
     images:
-    - id: 1
+    - id: e.9.1
       image: {fileID: 21300000, guid: 6313cf68f688eb84085b3719be7816a6, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -562,7 +578,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 2
+    - id: e.9.2
       image: {fileID: 21300000, guid: bdb99a06c811df04ca875ee35a886d8f, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -578,7 +594,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 3
+    - id: e.9.3
       image: {fileID: 21300000, guid: eba22c16338ee394d90fa785349bbb46, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -594,7 +610,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    - id: 4
+    - id: e.9.4
       image: {fileID: 21300000, guid: 516876045b4b4e04c91921cf37ab0461, type: 3}
       AcceptedValues:
       - cluster: 0
@@ -610,4 +626,4 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    filtro: {fileID: 0}
+    filtro: {fileID: 184096011432200753, guid: 35768e9c827b94b4d85ff3643507fc4b, type: 3}
