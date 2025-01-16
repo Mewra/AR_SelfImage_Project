@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -125,14 +126,49 @@ public class GameManager : MonoBehaviour
 
     public Clusters ChooseClusterToSpawn()
     {
-        int clusterCasuale = 99;
+
+
+        Clusters clusterCasuale = 0;
         do
         {
-            clusterCasuale = (int)UnityEngine.Random.Range(0, 6);
+            clusterCasuale = SelectedCluster();// (int)UnityEngine.Random.Range(0, 6);
         } while (imgClusters[(int)clusterCasuale].Count < 0);
 
-
+        Debug.Log(clusterCasuale);
         return (Clusters)clusterCasuale;
+    }
+
+    public Clusters SelectedCluster()
+    {
+        Dictionary<Clusters, double> clusters = new Dictionary<Clusters, double>();
+        foreach (SliderClusterModel scm in SlidersManager.instance.sliderClusters)
+        {
+            clusters.Add(scm.cluster, LinkAPIManager.instance.TruncateToTwoDecimals(scm.slider.normalizedValue));
+        }
+
+        // Normalizzare i valori
+        double total = clusters.Values.Sum();
+        Dictionary<Clusters, double> normalizedClusters = clusters.ToDictionary(kvp => kvp.Key, kvp => kvp.Value / total);
+
+        // Generare numero casuale
+        System.Random random = new System.Random();
+        double r = random.NextDouble();
+
+        // Selezionare il cluster
+        double cumulative = 0.0;
+        Clusters selectedCluster = 0;
+
+        foreach (var kvp in normalizedClusters)
+        {
+            cumulative += kvp.Value;
+            if (r <= cumulative)
+            {
+                selectedCluster = kvp.Key;
+                break;
+            }
+        }
+
+        return selectedCluster;
     }
 
     public void SpawnNewImage()

@@ -45,13 +45,13 @@ public class LinkAPIManager : MonoBehaviour
         ClusterScores score1 = new ClusterScores
         {
             cluster_id = Clusters.A.ToString(),
-            value = 19.0f
+            score = 19.0f
 
         };
         ClusterScores score2 = new ClusterScores
         {
             cluster_id = Clusters.B.ToString(),
-            value = 34.0f
+            score = 34.0f
 
         };
 
@@ -99,7 +99,7 @@ public class LinkAPIManager : MonoBehaviour
             ClusterScores score = new ClusterScores
             {
                 cluster_id = scm.cluster.ToString(),
-                value = float.Parse(val)
+                score = float.Parse(val)
 
             };
 
@@ -108,7 +108,7 @@ public class LinkAPIManager : MonoBehaviour
 
     }
 
-    float TruncateToTwoDecimals(float value)
+    public float TruncateToTwoDecimals(float value)
     {
         return Mathf.Floor(value * 100) / 100;
     }
@@ -223,7 +223,7 @@ public class LinkAPIManager : MonoBehaviour
 
     public void SendImage(string path, byte[] img)
     {
-        string apiUrl = "https://example.com/api/room/session-report";
+        string apiUrl = "https://self-image-api-production.up.railway.app/api/room/selfie";
 
         // Avvia la coroutine per inviare la richiesta
         StartCoroutine(SendPostImage(apiUrl, path, img));
@@ -263,7 +263,7 @@ public class LinkAPIManager : MonoBehaviour
     public void SendReportImage()
     {
 
-        //SendImage(ARManager.instance.path, ARManager.instance.screenshotBytes);
+        SendImage(ARManager.instance.path, ARManager.instance.screenshotBytes);
         SendSessionReport();
     }
 
@@ -307,5 +307,5 @@ public class Interaction
 public class ClusterScores
 {
     public string cluster_id;
-    public float value;
+    public float score;
 }
