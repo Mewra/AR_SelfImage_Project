@@ -34,7 +34,7 @@ MonoBehaviour:
         value: 8
       - cluster: 5
         value: -12
-    - id: f.2.2
+    - id: f.1.2
       image: {fileID: 21300000, guid: f7e8dc1ccdd8235449b5ea5917af60f7, type: 3}
       AcceptedValues:
       - cluster: 1
@@ -50,7 +50,7 @@ MonoBehaviour:
         value: 8
       - cluster: 5
         value: -12
-    - id: f.3.3
+    - id: f.1.3
       image: {fileID: 21300000, guid: edea809f2a7c5bc44a3053b7aa9bd563, type: 3}
       AcceptedValues:
       - cluster: 1
