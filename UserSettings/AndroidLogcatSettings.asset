@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "00084144S002266",
+    "m_SelectedDeviceId": "32031JEGR07063",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "32031JEGR07063",
+        "name": "com.UnityLearn.ARProject",
+        "processId": 21214,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -37,6 +37,12 @@
             "name": "com.UnityLearn.ARProject",
             "processId": 20478,
             "exited": true
+        },
+        {
+            "deviceId": "32031JEGR07063",
+            "name": "com.UnityLearn.ARProject",
+            "processId": 21214,
+            "exited": false
         }
     ],
     "m_Tags": {
