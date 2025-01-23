@@ -69,12 +69,14 @@ public class CardLogic : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
         if (rectTransform.anchoredPosition.x > 100)
         {
             GameManager.instance.SwipeRight();
+            this.gameObject.GetComponent<Image>().raycastTarget = false;
             targetPosition = new Vector2(500, 0);
         }else
 
         if (rectTransform.anchoredPosition.x < -100)
         {
             GameManager.instance.SwipeLeft();
+            this.gameObject.GetComponent<Image>().raycastTarget = false;
             targetPosition = new Vector2(-500, 0);
         }
 
@@ -104,6 +106,7 @@ public class CardLogic : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
                     targetPosition = Vector2.zero;
                     rectTransform.anchoredPosition = targetPosition;
                     image.color = Color.white;
+                    this.gameObject.GetComponent<Image>().raycastTarget = true;
 
                 }
             }
