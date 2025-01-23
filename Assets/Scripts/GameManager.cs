@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
     private bool reachedEnoughCard = false;
     private int numberSpawnedImages = 0;
     public int maxNumberReach; //20 da inspector
+    public bool playOffline = false;
 
 
 
@@ -346,6 +347,11 @@ public class GameManager : MonoBehaviour
         {
             LinkAPIManager.instance.SendRequestJoinRoom(inputNickname.text, inputRoomCode.text);
         }
+    }
+    public void OnClickPlayOffline()
+    {
+        playOffline = true;
+        StartGame();
     }
 
     public void StartGame()
