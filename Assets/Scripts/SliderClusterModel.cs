@@ -9,4 +9,5 @@ public class SliderClusterModel : MonoBehaviour
 {
     public Clusters cluster;
     public Slider slider;
+    public GameObject imgSegno;
 }

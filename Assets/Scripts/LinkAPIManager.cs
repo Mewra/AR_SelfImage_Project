@@ -17,6 +17,7 @@ public class LinkAPIManager : MonoBehaviour
         //SerializeProva();
     }
 
+    /*
     public void SerializeProva()
     {
         List<Interaction> interactions = new List<Interaction>();
@@ -72,7 +73,7 @@ public class LinkAPIManager : MonoBehaviour
         string json = JsonUtility.ToJson(session);
 
         Debug.Log(json);
-    }
+    }*/
 
 
     public void AddInteraction(Immagine i, bool swipped)
@@ -125,7 +126,11 @@ public class LinkAPIManager : MonoBehaviour
 
     public void ResetSessionReport()
     {
-        sessionReport = new SessionReport();
+        //sessionReport = new SessionReport();
+        sessionReport.interactions = new List<Interaction>();
+        sessionReport.scores = new List<ClusterScores>();
+        sessionReport.unlocked_filters = new List<string>();
+        sessionReport.unlocked_images = new List<string>();
     }
 
     #region API Requests

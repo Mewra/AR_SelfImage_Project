@@ -11,6 +11,9 @@ public class SlidersManager : MonoBehaviour
     public static SlidersManager instance;
     // Start is called before the first frame update
     public List<SliderClusterModel> sliderClusters;
+    public float baseValore;
+    public Sprite piuSprite;
+    public Sprite menoSprite;
 
     public void Awake()
     {
@@ -27,21 +30,24 @@ public class SlidersManager : MonoBehaviour
                 Image img = sc.slider.fillRect.GetComponent<Image>();
                 if (update.value > 0)
                 {
-                    StartCoroutine(ChangeSliderColor(img, Color.green));
+                    StartCoroutine(ChangeSliderColor(img, new Color32(91, 220, 141, 255), sc, piuSprite));
                 }
                 else
                 {
-                    StartCoroutine(ChangeSliderColor(img, Color.red));
+                    StartCoroutine(ChangeSliderColor(img, new Color32(220, 91, 128, 255), sc, menoSprite));
                 }
                 sc.slider.value += update.value;
             }
         }
     }
 
-    private IEnumerator ChangeSliderColor(Image img, Color col)
+    private IEnumerator ChangeSliderColor(Image img, Color32 col, SliderClusterModel scm, Sprite valore)
     {
         img.color = col;
+        scm.imgSegno.GetComponent<Image>().sprite = valore;
+        scm.imgSegno.SetActive(true);
         yield return new WaitForSeconds(3f);
+        scm.imgSegno.SetActive(false);
         img.color = Color.white;
     }
 
@@ -49,7 +55,7 @@ public class SlidersManager : MonoBehaviour
     {
         foreach (SliderClusterModel sc in sliderClusters)
         {
-            sc.slider.value = 50;//baseSliderValue;
+            sc.slider.value = baseValore;//baseSliderValue;
         }
     }
 }

@@ -18,6 +18,8 @@ public class ARManager : MonoBehaviour
     public GameObject fotoScene;
     public GameObject UIfotoScene;
     public TMP_Text countdownText;
+    public GameObject scattaFotoBtn;
+    public GameObject ricominciaBtn;
 
     [Header("Screenshot")]
     public string path;
@@ -53,7 +55,7 @@ public class ARManager : MonoBehaviour
 
         Debug.Log($"Screenshot salvato in: {path}");
         uiImage.texture = screenshotTexture;
-        uiImage.gameObject.SetActive(true);
+        
         LinkAPIManager.instance.SendReportImage();
         // Pulizia della memoria
         //Destroy(screenshotTexture);
@@ -61,6 +63,7 @@ public class ARManager : MonoBehaviour
     // Start is called before the first frame update
     public void TakeScreenshot()
     {
+        StartCoroutine(TogliUI());
         StartCoroutine(CaptureScreenshot());
     }
 
@@ -89,9 +92,21 @@ public class ARManager : MonoBehaviour
             // Riduci il tempo rimanente
             currentTime--;
         }
-        UIfotoScene.SetActive(false);
-        countdownText.gameObject.SetActive(false);
+        
         TakeScreenshot();
+    }
+
+    IEnumerator TogliUI()
+    {
+        fotoScene.SetActive(false);
+        //UIfotoScene.SetActive(false);
+        countdownText.gameObject.SetActive(false);
+        yield return new WaitForSeconds(1f);
+        uiImage.gameObject.SetActive(true);
+        fotoScene.SetActive(true);
+        ricominciaBtn.SetActive(true);
+        scattaFotoBtn.SetActive(false);
+
     }
     #endregion
 
@@ -100,5 +115,8 @@ public class ARManager : MonoBehaviour
         fotoScene.SetActive(false);
         UIfotoScene.SetActive(true);
         uiImage.gameObject.SetActive(false);
+        ricominciaBtn.SetActive(false);
+        scattaFotoBtn.SetActive(true);
+
     }
 }

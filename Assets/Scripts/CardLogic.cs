@@ -45,12 +45,14 @@ public class CardLogic : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
 
         if (rectTransform.anchoredPosition.x > 100)
         {
-            image.color = Color.green;
+            Color32 verde = new Color32(91, 220, 141, 255);
+            image.color = verde;
         }
         else
         if (rectTransform.anchoredPosition.x < -100)
         {
-            image.color = Color.red;
+            Color32 rosso = new Color32(220, 91, 128, 255);
+            image.color = rosso;
         }
         else
         {

@@ -332,7 +332,8 @@ public class GameManager : MonoBehaviour
     {
         mainScene.SetActive(false);
         ARManager.instance.fotoScene.SetActive(true);
-        FiltriManager.instance.UIfilter.gameObject.SetActive(true);
+        if(FiltriManager.instance.UIfilter.gameObject.GetComponent<Image>().sprite!=null)
+                FiltriManager.instance.UIfilter.gameObject.SetActive(true);
     }
 
     public void OnClickJoinRoom()
@@ -370,6 +371,7 @@ public class GameManager : MonoBehaviour
         FiltriManager.instance.ResetAllFilters();
         mainScene.SetActive(true);
         FiltriManager.instance.UIfilter.gameObject.SetActive(false);
+        FiltriManager.instance.UIfilter.gameObject.GetComponent<Image>().sprite = null;
         Init();
     }
 
