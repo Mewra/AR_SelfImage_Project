@@ -10,7 +10,7 @@ public class CardLogic : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
     private RectTransform rectTransform;
     private Image image;
     public Canvas canvas;
-    float speed = 0.2f;
+    float speed = 0.4f;
     private float lerpTime = 0f;
     public Vector2 targetPosition = Vector2.zero;
     public bool endDrag = false;
@@ -43,13 +43,13 @@ public class CardLogic : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
         rectTransform.anchoredPosition = newPosition;
 
 
-        if (rectTransform.anchoredPosition.x > 100)
+        if (rectTransform.anchoredPosition.x > 70)
         {
             Color32 verde = new Color32(91, 220, 141, 255);
             image.color = verde;
         }
         else
-        if (rectTransform.anchoredPosition.x < -100)
+        if (rectTransform.anchoredPosition.x < -70)
         {
             Color32 rosso = new Color32(220, 91, 128, 255);
             image.color = rosso;
@@ -66,14 +66,14 @@ public class CardLogic : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
         lerpTime = 0;
         //targetPosition = Vector2.zero;
         //RIGHT SIDE
-        if (rectTransform.anchoredPosition.x > 100)
+        if (rectTransform.anchoredPosition.x > 70)
         {
             GameManager.instance.SwipeRight();
             this.gameObject.GetComponent<Image>().raycastTarget = false;
             targetPosition = new Vector2(500, 0);
         }else
 
-        if (rectTransform.anchoredPosition.x < -100)
+        if (rectTransform.anchoredPosition.x < -70)
         {
             GameManager.instance.SwipeLeft();
             this.gameObject.GetComponent<Image>().raycastTarget = false;
