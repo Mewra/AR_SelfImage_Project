@@ -556,7 +556,7 @@ MonoBehaviour:
         value: 4
       - cluster: 4
         value: -12
-    filtro: {fileID: 184096011432200753, guid: 82fd74d4ac328554993dfb1def759249, type: 3}
+    filtro: {fileID: 184096011432200753, guid: 35768e9c827b94b4d85ff3643507fc4b, type: 3}
   - id: e.9
     cluster: 4
     completedImage: {fileID: 21300000, guid: 9c2762eb85c9fe043adcc700db8f8cca, type: 3}
