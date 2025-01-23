@@ -339,6 +339,7 @@ public class GameManager : MonoBehaviour
 
     public void OnClickJoinRoom()
     {
+        playOffline = false;
         if (inputNickname.text == "" || inputRoomCode.text == "")
         {
             StartCoroutine(ShowErrorMessage("Compila i campi vuoti"));

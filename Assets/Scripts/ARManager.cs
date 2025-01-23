@@ -55,9 +55,12 @@ public class ARManager : MonoBehaviour
 
         Debug.Log($"Screenshot salvato in: {path}");
         uiImage.texture = screenshotTexture;
-        
-        if(!GameManager.instance.playOffline)
+
+        Debug.Log("PLAY OFFLINE" + GameManager.instance.playOffline);
+        if (!GameManager.instance.playOffline)
+        {
             LinkAPIManager.instance.SendReportImage();
+        }
         // Pulizia della memoria
         //Destroy(screenshotTexture);
     }

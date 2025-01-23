@@ -1,19 +1,13 @@
 {
     "m_SelectedDeviceId": "32031JEGR07063",
     "m_SelectedPackage": {
-        "deviceId": "32031JEGR07063",
-        "name": "com.UnityLearn.ARProject",
-        "processId": 15689,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 21214,
-            "exited": true
-        },
         {
             "deviceId": "32031JEGR07063",
             "name": "com.UnityLearn.ARProject",
@@ -42,7 +36,7 @@
             "deviceId": "32031JEGR07063",
             "name": "com.UnityLearn.ARProject",
             "processId": 15689,
-            "exited": false
+            "exited": true
         }
     ],
     "m_Tags": {
