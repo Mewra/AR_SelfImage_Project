@@ -48,5 +48,5 @@ MonoBehaviour:
   cameraFilter: {fileID: 11400000, guid: 2583beb834370a04ea68c9568d2a6499, type: 2}
   faceFilter: {fileID: 0}
   effettoParticellare: {fileID: 0}
-  UIFilter: {fileID: 21300000, guid: b8d29c6789ad3de46b518d27a09478cf, type: 3}
+  UIFilter: {fileID: 21300000, guid: d092afec7526a4c49ad9f8eb5b50f893, type: 3}
   _3DObject: {fileID: 0}

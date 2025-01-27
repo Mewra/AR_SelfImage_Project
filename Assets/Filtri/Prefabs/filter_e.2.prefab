@@ -47,7 +47,6 @@ MonoBehaviour:
   id_nome: filter_e.2
   cameraFilter: {fileID: 0}
   faceFilter: {fileID: 0}
-  effettoParticellare: {fileID: 4408147615699063330, guid: 5c1f8d39f6972a24080af43123248bff,
-    type: 3}
-  UIFilter: {fileID: 0}
+  effettoParticellare: {fileID: 0}
+  UIFilter: {fileID: 21300000, guid: 57558504c3ce8c64685a649cda20aaf7, type: 3}
   _3DObject: {fileID: 0}
