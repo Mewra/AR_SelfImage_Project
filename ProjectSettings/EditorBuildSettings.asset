@@ -8,13 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/SelfImagePP.unity
     guid: 150d4bf752289884fb4265dd92ced4a9
   - enabled: 0
     path: Assets/AR-Filters/Scenes/Ice Cream Filter.unity
     guid: 1cae41257c8ea4e47b176c40aa2df56f
-  - enabled: 1
+  - enabled: 0
     path: Assets/AR-Filters/Scenes/AR Face Filter.unity
     guid: d2ce6375592e5714eb6c0cec4805b0fc
   m_configObjects:

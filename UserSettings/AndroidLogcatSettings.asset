@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "32031JEGR07063",
         "name": "com.UnityLearn.ARProject",
-        "processId": 15998,
+        "processId": 16304,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,61 +11,31 @@
         {
             "deviceId": "32031JEGR07063",
             "name": "com.UnityLearn.ARProject",
-            "processId": 2979,
-            "exited": true
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 7724,
-            "exited": true
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 10619,
-            "exited": true
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.whatsapp",
-            "processId": 12191,
-            "exited": false
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 15689,
-            "exited": true
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "org.telegram.messenger",
-            "processId": 18420,
-            "exited": false
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 19875,
-            "exited": false
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
             "processId": 10554,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "32031JEGR07063",
             "name": "com.UnityLearn.ARProject",
             "processId": 14943,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "32031JEGR07063",
             "name": "com.UnityLearn.ARProject",
             "processId": 15998,
+            "exited": true
+        },
+        {
+            "deviceId": "32031JEGR07063",
+            "name": "com.UnityLearn.ARProject",
+            "processId": 8733,
+            "exited": true
+        },
+        {
+            "deviceId": "32031JEGR07063",
+            "name": "com.UnityLearn.ARProject",
+            "processId": 16304,
             "exited": false
         }
     ],
