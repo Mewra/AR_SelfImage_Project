@@ -25,6 +25,8 @@ public class ARManager : MonoBehaviour
     public string path;
     public byte[] screenshotBytes;
     public RawImage uiImage;
+    public Image imageForRect;
+    private Rect rectScreenshot;
 
 
     private void Awake()
@@ -40,11 +42,15 @@ public class ARManager : MonoBehaviour
         // Creazione di una Texture2D
         int width = Screen.width;
         int height = Screen.height;
-        Debug.Log("Width " + width + " Height " + height);
-        Texture2D screenshotTexture = new Texture2D(width, height, TextureFormat.RGB24, false);
+        /*rectScreenshot.x = 100;//imageForRect.GetComponent<RectTransform>().rect.x;
+        rectScreenshot.y = 100;//imageForRect.GetComponent<RectTransform>().rect.y;
+        rectScreenshot.width = imageForRect.GetComponent<RectTransform>().rect.width;
+        rectScreenshot.height = imageForRect.GetComponent<RectTransform>().rect.height;
+        Debug.Log("Width " + rectScreenshot.width + " Height " + rectScreenshot.height);*/
+        Texture2D screenshotTexture = new Texture2D(width, height, TextureFormat.RGB24, false);//new Texture2D((int)rectScreenshot.width, (int)rectScreenshot.height, TextureFormat.RGB24, false);//new Texture2D(width, height, TextureFormat.RGB24, false);
 
         // Acquisizione dello schermo
-        screenshotTexture.ReadPixels(new Rect(0, 0, width, height), 0, 0);
+        screenshotTexture.ReadPixels(new Rect(0, 0, width, height), 0, 0);//(rectScreenshot,0,0);//(new Rect(0, 0, width, height), 0, 0);
         screenshotTexture.Apply();
 
         screenshotBytes = screenshotTexture.EncodeToJPG();
