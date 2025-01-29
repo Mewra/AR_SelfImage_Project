@@ -3704,7 +3704,7 @@ MonoBehaviour:
   loginScene: {fileID: 836976400}
   mainScene: {fileID: 1448232595}
   panelFinished: {fileID: 661591282}
-  maxNumberReach: 30
+  maxNumberReach: 20
   playOffline: 0
 --- !u!1 &701952389
 GameObject:
