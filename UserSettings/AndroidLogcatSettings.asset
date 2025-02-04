@@ -3,29 +3,11 @@
     "m_SelectedPackage": {
         "deviceId": "32031JEGR07063",
         "name": "com.UnityLearn.ARProject",
-        "processId": 16304,
+        "processId": 22477,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 10554,
-            "exited": true
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 14943,
-            "exited": true
-        },
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 15998,
-            "exited": true
-        },
         {
             "deviceId": "32031JEGR07063",
             "name": "com.UnityLearn.ARProject",
@@ -36,6 +18,30 @@
             "deviceId": "32031JEGR07063",
             "name": "com.UnityLearn.ARProject",
             "processId": 16304,
+            "exited": true
+        },
+        {
+            "deviceId": "32031JEGR07063",
+            "name": "com.UnityLearn.ARProject",
+            "processId": 10389,
+            "exited": true
+        },
+        {
+            "deviceId": "32031JEGR07063",
+            "name": "com.UnityLearn.ARProject",
+            "processId": 15715,
+            "exited": true
+        },
+        {
+            "deviceId": "32031JEGR07063",
+            "name": "com.google.android.apps.nexuslauncher",
+            "processId": 3998,
+            "exited": false
+        },
+        {
+            "deviceId": "32031JEGR07063",
+            "name": "com.UnityLearn.ARProject",
+            "processId": 22477,
             "exited": false
         }
     ],

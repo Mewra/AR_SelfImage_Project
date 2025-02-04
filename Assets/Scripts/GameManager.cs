@@ -332,6 +332,7 @@ public class GameManager : MonoBehaviour
     public void OpenScreenshootScene()
     {
         mainScene.SetActive(false);
+        ARManager.instance.StartAR();
         ARManager.instance.fotoScene.SetActive(true);
         if(FiltriManager.instance.UIfilter.gameObject.GetComponent<Image>().sprite!=null)
                 FiltriManager.instance.UIfilter.gameObject.SetActive(true);
@@ -379,6 +380,7 @@ public class GameManager : MonoBehaviour
         mainScene.SetActive(true);
         FiltriManager.instance.UIfilter.gameObject.SetActive(false);
         FiltriManager.instance.UIfilter.gameObject.GetComponent<Image>().sprite = null;
+        ARManager.instance.StopAR();
         Init();
     }
 

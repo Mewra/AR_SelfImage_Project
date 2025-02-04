@@ -28,11 +28,15 @@ public class ARManager : MonoBehaviour
     public Image imageForRect;
     private Rect rectScreenshot;
 
+    [Header("ARSession")]
+    public ARSession arSession;
+
 
     private void Awake()
     {
         instance = this;
         countdownText.gameObject.SetActive(false);
+        StopAR();
     }
 
     #region Screenshot
@@ -128,5 +132,21 @@ public class ARManager : MonoBehaviour
         ricominciaBtn.SetActive(false);
         scattaFotoBtn.SetActive(true);
 
+    }
+
+    public void StartAR()
+    {
+        if (arSession != null)
+        {
+            arSession.enabled = true;
+        }
+    }
+
+    public void StopAR()
+    {
+        if (arSession != null)
+        {
+            arSession.enabled = false;
+        }
     }
 }

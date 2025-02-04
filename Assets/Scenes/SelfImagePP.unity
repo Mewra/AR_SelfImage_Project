@@ -8651,6 +8651,7 @@ MonoBehaviour:
   screenshotBytes: 
   uiImage: {fileID: 1374623521}
   imageForRect: {fileID: 85513666}
+  arSession: {fileID: 1167446572}
 --- !u!1 &1636302434
 GameObject:
   m_ObjectHideFlags: 0
