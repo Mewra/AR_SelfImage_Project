@@ -3,17 +3,11 @@
     "m_SelectedPackage": {
         "deviceId": "32031JEGR07063",
         "name": "com.UnityLearn.ARProject",
-        "processId": 22477,
+        "processId": 13764,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
-        {
-            "deviceId": "32031JEGR07063",
-            "name": "com.UnityLearn.ARProject",
-            "processId": 8733,
-            "exited": true
-        },
         {
             "deviceId": "32031JEGR07063",
             "name": "com.UnityLearn.ARProject",
@@ -42,6 +36,18 @@
             "deviceId": "32031JEGR07063",
             "name": "com.UnityLearn.ARProject",
             "processId": 22477,
+            "exited": true
+        },
+        {
+            "deviceId": "32031JEGR07063",
+            "name": "org.telegram.messenger",
+            "processId": 18465,
+            "exited": false
+        },
+        {
+            "deviceId": "32031JEGR07063",
+            "name": "com.UnityLearn.ARProject",
+            "processId": 13764,
             "exited": false
         }
     ],

@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
+using UnityEngine.XR.ARFoundation;
 using static GameManager;
 using static ImagesConfig;
 
@@ -49,12 +50,14 @@ public class GameManager : MonoBehaviour
     private int numberSpawnedImages = 0;
     public int maxNumberReach; //20 da inspector
     public bool playOffline = false;
+    public ARCameraManager arCameraManager;
 
 
 
     public void Awake()
     {
         instance = this;
+        SetFrontCamera();
     }
     public void Init()
     {
@@ -383,6 +386,14 @@ public class GameManager : MonoBehaviour
         ARManager.instance.StopAR();
         Init();
     }
+
+    void SetFrontCamera()
+    {
+        
+         arCameraManager.requestedFacingDirection = CameraFacingDirection.User; // Fotocamera frontale
+        
+    }
+
 
 }
 
