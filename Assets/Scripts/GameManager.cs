@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     [Header("Unlocked")]
     public Image unlockedImage;
     public GameObject panelImageUnlocked;
-    public GameObject filtroText;
+    public TMP_Text filtroText;
 
     [Header("Scene")]
     public GameObject loginScene;
@@ -52,6 +52,10 @@ public class GameManager : MonoBehaviour
     public bool playOffline = false;
     public ARCameraManager arCameraManager;
 
+    [Header("Tutorial")]
+    public GameObject[] tutorialPages;
+    public int activePage;
+    public GameObject buttonNext;
 
 
     public void Awake()
@@ -102,6 +106,7 @@ public class GameManager : MonoBehaviour
                 imgCompl.hasFilter = cic.hasFilter;
                 imgCompl.filtro = cic.filtro;
                 imgCompl.isUnlocked = false;
+                imgCompl.NomeCluster = getNomeCluster(cic.cluster);
                 allCompletedImages.Add(imgCompl);
 
             }
@@ -109,6 +114,51 @@ public class GameManager : MonoBehaviour
         }
 
         SpawnNewImage();
+    }
+
+    public void OnClickNextTutorial()
+    {
+        foreach(GameObject go in tutorialPages)
+        {
+            go.SetActive(false);
+        }
+        tutorialPages[++activePage].SetActive(true);
+        if(activePage == tutorialPages.Length-1)
+        {
+            buttonNext.SetActive(false);
+        }
+    }
+
+    public void ResetTutorial()
+    {
+        foreach (GameObject go in tutorialPages)
+        {
+            go.SetActive(false);
+        }
+        activePage = 0;
+        tutorialPages[activePage].SetActive(true);
+        buttonNext.SetActive(true);
+    }
+
+    public string getNomeCluster(Clusters c)
+    {
+        switch (c)
+        {
+            case Clusters.A:
+                return "DISEGNARSI";
+            case Clusters.B:
+                return "NASCONDERSI";
+            case Clusters.C:
+                return "PRESENTARSI";
+            case Clusters.D:
+                return "MASCHERARSI";
+            case Clusters.E:
+                return "(S)COMPORSI";
+            case Clusters.F:
+                return "SOTTRARSI";
+        }
+
+        return "";
     }
 
     public void RemoveImage(Clusters c, Immagine i)
@@ -260,7 +310,7 @@ public class GameManager : MonoBehaviour
             icomp.isUnlocked = true;
             if (icomp.hasFilter)
             {
-
+                filtroText.text = "Filtro" + "\n" +  "<b>" + icomp.NomeCluster + ": " + icomp.filtro.nomeFiltro + "</b> sbloccato";
                 UnlockFilter(icomp);
                 if (icomp.filtro != null)
                 {
@@ -415,4 +465,5 @@ public class ImmagineCompleta
     public bool hasFilter;
     public bool isUnlocked;
     public FiltroModel filtro;
+    public string NomeCluster;
 }

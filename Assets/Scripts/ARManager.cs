@@ -64,6 +64,7 @@ public class ARManager : MonoBehaviour
         File.WriteAllBytes(path, screenshotBytes);
 
         Debug.Log($"Screenshot salvato in: {path}");
+        SaveImageToGallery(path);
         uiImage.texture = screenshotTexture;
 
         Debug.Log("PLAY OFFLINE" + GameManager.instance.playOffline);
@@ -86,6 +87,13 @@ public class ARManager : MonoBehaviour
     {
         countdownText.gameObject.SetActive(true);
         StartCoroutine(StartCountdown());
+    }
+
+    public void SaveImageToGallery(string filePath)
+    {
+        NativeGallery.Permission permission = NativeGallery.SaveImageToGallery(filePath, "MyApp", "screenshot.png");
+        Debug.Log("Permesso: " + permission);
+    
     }
 
 
