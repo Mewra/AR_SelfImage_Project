@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "32031JEGR07063",
         "name": "com.UnityLearn.ARProject",
-        "processId": 13031,
+        "processId": 27997,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -54,6 +54,12 @@
             "deviceId": "32031JEGR07063",
             "name": "com.UnityLearn.ARProject",
             "processId": 13031,
+            "exited": false
+        },
+        {
+            "deviceId": "32031JEGR07063",
+            "name": "com.UnityLearn.ARProject",
+            "processId": 27997,
             "exited": false
         }
     ],
